@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+@font-face{
+  font-family: myfont;
+  src: url("../font/Alegreyaitalic.ttf");
+}
+body {
+  background-image: url("../picture/login3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+#header{
+	box-sizing: border-box;
+	background-image: url(../picture/abcd.jpg);
+	height: 90px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	margin-bottom: 6px;
+	border-radius: 15px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+#header-left-logo {
+  float: left;
+  background-image: url("../picture/mainlogo.png");
+  background-size: cover;
+  height: 75px;
+  width: 250px;
+  margin: 5px 8%;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  border :2px solid black;
+}
+#header-right{
+  float:right;
+  color: white;
+  margin-top: 32px;
+  margin-right: 8%;
+}
+#header-right a:hover,a.active{
+  background-color: Steelblue;
+  color: white;
+  box-shadow: 2px 3px 10px 0px rgb(0,0,0);
+  border-radius: 5px;
+}
+.header-right-menu{
+  margin-right:20px;
+  font-size: 18px;
+  padding: 8px 16px;
+  color: black;
+  cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+		font-family: myfont;
+}
+
+.login-text {
+  background-color: rgba(197,197,197,0.5);
+  margin-left: 10%;
+  border-radius: 20px;
+  width: 20%;
+  height: 50%;
+  text-align:center;
+  font-family: myfont;
+}
+.input-field
+{
+  border-radius: 5px;
+  border: 0px;
+  width: 80%;
+  height: 35px;
+  text-align:center;
+}
+
+#login-button
+{
+  background-color: #c5c5c5;
+  border-radius: 10px;
+  border: 0px;
+  margin-top: 10px;
+  padding : 10px 20px;
+  transition-duration: 0.2s;
+}
+
+/*.input-field:hover
+{
+  box-shadow: 2px 3px 10px 0px rgb(0,0,0);
+  border: 1px solid black;
+}*/
+
+#login-button:hover
+{
+  box-shadow: 2px 3px 10px 0px rgb(0,0,0);
+  background-color: #1F618D;
+  color: white;
+}
+.givemargin
+{
+  margin-left: 10%;
+}

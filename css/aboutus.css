@@ -1,0 +1,73 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+@font-face{
+	font-family: myfont;
+	src: url("../font/Alegreyaitalic.ttf");
+}
+#header{
+	font-family: myfont;
+	box-sizing: border-box;
+	background-image: url(../picture/abcd.jpg);
+	height: 90px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	margin-bottom: 6px;
+	border-radius: 15px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+
+}
+#header-left-logo {
+	float: left;
+	background-image: url("../picture/mainlogo.png");
+	background-size: cover;
+	height: 80px;
+	width: 250px;
+	margin: 5px 8%;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	border :2px solid black;
+}
+#header-right{
+	float:right;
+	color: white;
+	margin-top: 32px;
+	margin-right: 8%;
+}
+#header-right a:hover,a.active{
+	background-color: Steelblue;
+	color: white;
+	box-shadow: 2px 3px 10px 0px rgb(0,0,0);
+	border-radius: 5px;
+}
+.header-right-menu{
+	margin-right:20px;
+	font-size: 18px;
+	padding: 8px 16px;
+	color: black;
+	cursor: pointer;
+  	list-style: none;
+  	text-decoration: none;
+}
+#body2{
+	font-family: myfont;
+	height: 750px;
+	background-image: url("../picture/aboutus.jpg");
+	background-size: cover;
+	box-sizing: border-box;
+	position: fixed;
+}
+
+#body2-text {
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+	padding-right: 50px;
+	padding-left: 150px;
+	margin-top: 450px;
+  	color: black;
+}
