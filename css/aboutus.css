@@ -1,10 +1,14 @@
 *{
 	margin: 0;
-	box-sizing: border-box;
 }
 @font-face{
 	font-family: myfont;
 	src: url("../font/Alegreyaitalic.ttf");
+}
+body
+{
+background-image: url("../picture/aboutback.png");
+background-size: cover;
 }
 #header{
 	font-family: myfont;
@@ -50,24 +54,36 @@
 	padding: 8px 16px;
 	color: black;
 	cursor: pointer;
-  	list-style: none;
-  	text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
-#body2{
+body
+{
 	font-family: myfont;
-	height: 750px;
-	background-image: url("../picture/aboutus.jpg");
-	background-size: cover;
-	box-sizing: border-box;
-	position: fixed;
 }
+#body2-text
+{
+	margin-top: 5%;
+	padding-top: 5%;
+	padding-left: 5%;
+  color: black;
+	padding-right: 5%;
 
-#body2-text {
-	box-sizing: border-box;
-	float: left;
-	width: 50%;
-	padding-right: 50px;
-	padding-left: 150px;
-	margin-top: 450px;
-  	color: black;
+}
+.heading-text
+{
+	font-size: 30px;
+}
+.subheading-text
+{
+	font-size: 20px;
+}
+.content-text
+{
+	font-size: 17px;
+}
+.image-prop
+{
+	float:left;
+
 }

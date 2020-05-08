@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="css/download.css">
 	</head>
 	<body>
-		<center><h1 class="home-title"><span>Hello User!</span>
+		<center><h1 class="home-title"><span>Hello <?php echo $_SESSION['username']; ?>!</span>
 			<span>View, Edit & Download Your Files!</span></h1></center>
 <div class="container">
 	<table>
@@ -24,17 +24,18 @@
 			<!--Table Content (Aryan ka kaam)-->
 			<?php
                         $i = 1;
-						$username = $_SESSION['username'];
+			$username = $_SESSION['username'];
                         $sql1 = "select title,filename,date from userfiles where username='$username'";
                         $result = mysqli_query($conn, $sql1);
-                        while ($row = mysqli_fetch_array($result)) {
+                        while ($row = mysqli_fetch_array($result))
+                                {
                             ?>
                             <tr>
                                 <td><?php echo $row['title']; ?></td>
                                 <td><?php echo $row['filename']; ?></td>
                                 <td><?php echo $row['date']; ?></td>
-                                <td><a href="USerfiles/<?php echo $username+$row['filename']; ?>" target="_blank">View</a> / 
-                                <a href="USerfiles/<?php echo $username+$row['filename']; ?>" download>Download</td>
+                                <td><a href="USerfiles/<?php echo $username.$row['filename']; ?>" target="_blank">View</a> / 
+                                <a href="USerfiles/<?php echo $username.$row['filename']; ?>" download>Download</td>
                             </tr>
                         <?php } ?>
 		</tbody>

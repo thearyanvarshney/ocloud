@@ -39,7 +39,7 @@ charset=UTF-8">
 
 			<!--DIV ==> Logout Div-->
 			
-				<button id="logout" class="button-four" onclick="window.open('login.html','_self')">Sign Out</button>
+				<button id="logout" class="button-four" onclick="window.open('login.php','_self')">Sign Out</button>
 			
 		</div>
 
