@@ -4,17 +4,14 @@ function passmatch()
 
 	x=document.getElementById("userpass1").value;
 	y=document.getElementById("userpass2").value;
-	if(x.length==0 || y.length==0)
+	if(x!=y)
 	{
-		alert("Password must not be null");
-		document.getElementById('mainform').action='';
-	}
-	else if(x!=y)
-	{
-		document.getElementById("innerpopup").innerHTML="Passwords Don't Match. Please Verify Again!"
+		document.getElementById("innerpopup").innerHTML="Passwords Don't Match!";document.getElementById("signupform").action="javascript:void(0)";
+		docuemt.getElementById("signupform").method="";
 	}
 	else {
-		document.getElementById('mainform').action='login.html';
+		document.getElementById('signupform').action="login.php";
+		document.getElementById("signupform").method="post";
 	}
 }
 function reseterror()
@@ -24,7 +21,7 @@ function reseterror()
 function validateuserid()
 {
 	var x=document.getElementById("username").value;
-	var re = new RegExp("^[a-zA-Z0-9]+$");
+	var re = new RegExp("^[a-zA-Z0-9._@]+$");
 	if(!re.test(x))
 	{
 		alert("Username is invalid!");

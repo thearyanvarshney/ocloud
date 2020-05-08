@@ -16,10 +16,8 @@ charset=UTF-8">
 			<div id="logo-div"></div>
 			<!--DIV ==> home div or home page after sign in-->
 			<div id="home-div">
-				<a href="userinterface.html">
-					<img src="icons/home-icon.png">
-					Home
-				</a>
+				<a href="userinterface.php">
+					<img src="icons/home-icon.png">Home</a>
 			</div>
 			<!--DIV ==> Files and options-->
 				<p class="files-heading"><b>My Files</b></p><br>
@@ -40,7 +38,7 @@ charset=UTF-8">
 			<!--DIV ==> Logout Div-->
 			
 				<button id="logout" class="button-four" onclick="window.open('login.php','_self')">Sign Out</button>
-			
+				
 		</div>
 
 

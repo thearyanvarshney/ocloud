@@ -322,3 +322,29 @@ h1, button{
     opacity: 1;
     transition: 0s
 }
+.button-four {
+  	padding: 13px 25px;
+  	outline: none;
+  	background-color: #95a5a6;
+  	border: none;
+	color: black;
+	margin-top: 10%;
+	margin-left: 25%;
+  	border-radius: 7px;
+  	box-shadow: 0 3px black;
+	font-family: myfont;
+	font-size: 20px;
+}
+
+.button-four:hover{
+  background-color: #362d26;
+	box-shadow: 0 3px #95a5a6;
+	color:aliceblue;
+}
+
+.button-four:active {
+  color:white;
+background-color:#565350;
+  box-shadow: 0 3px #95a5a6;
+  transform: translateY(5px);
+}
