@@ -21,9 +21,8 @@
       </div>
     </div>
     <div class="breakclass"></div>
-    <div class="signupclass">
-      <h1 style="font-family: myfont; font-size: 40px;" class="fontedit">Let's Get Started</h1>
-      <form id="signupform" action="login.php" method="post" >
+    <form id="signupform" action="login.php" method="post" >
+     <h1 style="font-family: myfont; font-size: 40px;">Let's Get Started</h1>
         <input class="inputclass" type="text" name="FirstName" placeholder="First Name" required>
         <input class="inputclass" type="text" name="LastName" placeholder="Last Name">
         <br><br>
@@ -31,16 +30,19 @@
         <br><br>
         <input class="inputclass" type="tel" name="ContactNum" placeholder="Contact Number" maxlength="10" required>
         <br><br>
-        <input class="inputclass" id="username" type="text" name="Username" placeholder="Username" required>
+        <input class="inputclass" id="username" type="text" name="Username" placeholder="Username" onclick="reseterror2()" required>
         <br><br>
-        <input class="inputclass" id="userpass1" type="password" name="Password" placeholder="Password" onClick="reseterror()" required>
+        <input class="inputclass" id="userpass1" type="password" name="Password" placeholder="Password" onClick="reseterror()1" required>
         <br><br>
-        <input class="inputclass" id="userpass2" type="password" name="CPassword" placeholder="Confirm Password" onClick="reseterror()" required>
-        <p id="innerpopup" style="color:white; font-family: verdana; background-color: red;"></p>
-        <br>
-        <input style="font-family: myfont; font-size: 18px;" class="submitclass" type="submit" value="Sign Up!" name="SignUp" onClick="passmatch();validateuserid()">
-      </form>
-    </div>
-    <h2 align="center" style="color:white;"><?php     echo $a=@$_GET['msg'];     ?></h2>
+        <input class="inputclass" id="userpass2" type="password" name="CPassword" placeholder="Confirm Password" onClick="reseterror()1" required>
+        <center>
+         <p class="errormessage"><?php     echo $a=@$_GET['msg'];     ?></p>
+        <p id="innerpopup1" class="errormessage"></p>
+        <p id="innerpopup2" class="errormessage"></p>
+        </center>
+        
+          <br>
+        <input style="font-family: myfont; font-size: 18px;" class="submitclass" type="submit" value="Sign Up!" name="SignUp" onClick="validateuserid();passmatch()">
+        </form>
   </body>
 </html>

@@ -4,7 +4,10 @@ body
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
+}
+html,body
+{
+    height:100%;
 }
 @font-face{
   font-family: myfont;
@@ -57,22 +60,34 @@ body
   list-style: none;
   text-decoration: none;
 }
-.signupclass {
-  margin:auto;
-  padding: 1%;
-  background-color:rgba(105,105,105,0.9);
-  width: 30%;
-  border-radius: 20px;
-  text-align: center;
+
+#signupform
+{
+    margin: auto;
+    background-color:rgba(105,105,105,0.9);
+    width: 35%;
+    border-radius: 20px;
+    height: auto; 
+    padding-top:1%;
+    padding-bottom: 2%;
+    text-align: center;
+    
 }
 .inputclass
 {
-  border-radius: 10px;
-  width:40%;
-  padding-left: 1%;
-  height: 5%;
-  border: 0px;
-  text-align: center;
+    border-radius: 10px;
+    width:38%;
+    padding:1.5%;
+    border: 0px;
+    text-align: center;
+}
+.errormessage
+{
+    color:white;
+    font-family: verdana;
+    background-color: red;
+    border-radius:5px;
+    width: 80%;
 }
 .submitclass
 {
@@ -80,7 +95,7 @@ body
   border-radius: 10px;
   border: 0px;
   width: 20%;
-  height:6%;
+  padding:2%;
   transition-duration: 0.2s;
 }
 .submitclass:hover
