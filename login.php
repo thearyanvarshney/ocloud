@@ -52,20 +52,20 @@ mysqli_query($conn,$sql);
 			<br><br>
 			<input class="input-field" id="userpass" type="password" placeholder="Password" name="Password" pattern=".{6,}" required>
 			<br><br>
-			<div class="givemargin"align="left"><input type="checkbox" onClick="toggle()">Show Password</div>
+			<div align="center"><input type="checkbox" onClick="toggle()">Show Password</div>
 			<br>
 			<!--<div><?php echo $_GET['password_error'];?></div>-->
 			<input id="login-button" type="submit" name="Submit" value="Login" onClick="validuser()">
 			<br><br>
 			</form>
-		</div>1
+		</div>
 
 		<div class="login-text" style="margin-top: 1%;">
 			<p style="padding:10px; font-color: white"><a style="color: darkblue;" href="#">Forget Password?</a></p>
 		</div>
 
 		<div class="login-text" style="margin-top: 1%;">
-			<p style="padding:10px; font-color: white">New User? <a style="color: darkblue;" href="signup.html">  Sign Up!</a></p>
+			<p style="padding:10px; font-color: white">New User? <a style="color: darkblue;" href="signup.php">  Sign Up!</a></p>
 		</div>
         <h2 align="center" style="color:white;"><?php     echo $a=@$_GET['msg'];     ?></h2>
 	</body>
