@@ -67,19 +67,23 @@ html,body
     background-color:rgba(105,105,105,0.9);
     width: 35%;
     border-radius: 20px;
-    height: auto; 
+    height: auto;
     padding-top:1%;
     padding-bottom: 2%;
     text-align: center;
-    
+
 }
 .inputclass
 {
     border-radius: 10px;
     width:38%;
     padding:1.5%;
-    border: 0px;
     text-align: center;
+    border:1px solid black;
+}
+.inputclass:hover
+{
+  box-shadow: 0px 0px 7px 0px black;
 }
 .errormessage
 {
