@@ -35,7 +35,7 @@
         <input class="inputclass" id="userpass1" type="password" name="Password" placeholder="Password" onClick="reseterror()1" required>
         <br><br>
         <input class="inputclass" id="userpass2" type="password" name="CPassword" placeholder="Confirm Password" onClick="reseterror()1" required><br><br>
-        <input type="checkbox" style="font-family:myfont;"onclick="toggle()">Show Password
+        <div style="font-family:myfont;"><input type="checkbox" onclick="toggle()">Show Password</div>
         <center>
          <p class="errormessage"><?php     echo $a=@$_GET['msg'];     ?></p>
         <p id="innerpopup1" class="errormessage"></p>
@@ -45,5 +45,6 @@
           <br>
         <input style="font-family: myfont; font-size: 18px;" class="submitclass" type="submit" value="Sign Up!" name="SignUp" onClick="validateuserid();passmatch()">
         </form>
+
   </body>
 </html>
