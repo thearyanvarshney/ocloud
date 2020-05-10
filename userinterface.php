@@ -25,8 +25,12 @@ charset=UTF-8">
 				<div class="submain">
 				<button class="button-one" onclick="runupload()">Upload File</button>
 			</div><br>
-				<div class="submain"><button class="button-two" onclick="rundownload()"><span>Download File</span></button></div><br>
-				<div class="submain"><button class="button-three" onclick="rundelete()">Delete File</button></div>
+				<div class="submain">
+					<button class="button-two" onclick="rundownload()"><span>Download File</span></button>
+				</div><br>
+				<div class="submain">
+					<button class="button-three" onclick="rundelete()">Delete File</button>
+				</div>
 				</div><br>
 			<!--DIV ==> Profile contain div-->
 			<div id="profile">
@@ -36,9 +40,9 @@ charset=UTF-8">
 			</div>
 
 			<!--DIV ==> Logout Div-->
-			
+
 				<button id="logout" class="button-four" onclick="window.open('login.php','_self')">Sign Out</button>
-				
+
 		</div>
 
 

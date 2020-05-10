@@ -53,7 +53,8 @@ mysqli_query($conn,$sql);
 			<input class="input-field" id="userpass" type="password" placeholder="Password" name="Password" pattern=".{6,}" required>
 			<br><br>
 			<div align="center"><input type="checkbox" onClick="toggle()">Show Password</div>
-			<br>
+      <br>
+      <p style="  color:white;background-color: red;border-radius:5px;width: 100%;"><?php     echo $a=@$_GET['msg'];     ?></p>
 			<!--<div><?php echo $_GET['password_error'];?></div>-->
 			<input id="login-button" type="submit" name="Submit" value="Login" onClick="validuser()">
 			<br><br>
@@ -67,6 +68,6 @@ mysqli_query($conn,$sql);
 		<div class="login-text" style="margin-top: 1%;">
 			<p style="padding:10px; font-color: white">New User? <a style="color: darkblue;" href="signup.php">  Sign Up!</a></p>
 		</div>
-        <h2 align="center" style="color:white;"><?php     echo $a=@$_GET['msg'];     ?></h2>
+
 	</body>
 </html>

@@ -61,7 +61,7 @@ html,body
   text-decoration: none;
 }
 
-#signupform
+#signupformdesign
 {
     margin: auto;
     background-color:rgba(105,105,105,0.9);
@@ -89,12 +89,13 @@ html,body
 
 .errormessage
 {
-    color:white;
-    font-family: verdana;
-    background-color: red;
-    border-radius:5px;
-    width: 80%;
+  color:white;
+  font-family: verdana;
+  background-color: red;
+  border-radius:5px;
+  width: 80%;
 }
+
 .submitclass
 {
   background-color: #c5c5c5;
@@ -116,5 +117,5 @@ img
 }
 .breakclass
 {
-  padding-top: 4%
+  padding:4%
 }

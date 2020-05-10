@@ -21,8 +21,9 @@
       </div>
     </div>
     <div class="breakclass"></div>
+    <div id="signupformdesign">
     <form id="signupform" action="login.php" method="post" >
-     <h1 style="font-family: myfont; font-size: 40px;">Let's Get Started</h1>
+     <h1 style="font-family: myfont; font-size: 40px;">Let's Get Started!</h1>
         <input class="inputclass" type="text" name="FirstName" placeholder="First Name" required>
         <input class="inputclass" type="text" name="LastName" placeholder="Last Name">
         <br><br>
@@ -32,19 +33,20 @@
         <br><br>
         <input class="inputclass" id="username" type="text" name="Username" placeholder="Username" onclick="reseterror2()" required>
         <br><br>
-        <input class="inputclass" id="userpass1" type="password" name="Password" placeholder="Password" onClick="reseterror()1" required>
+        <input class="inputclass" id="userpass1" type="password" name="Password" placeholder="Password" onClick="reseterror1()" required>
         <br><br>
-        <input class="inputclass" id="userpass2" type="password" name="CPassword" placeholder="Confirm Password" onClick="reseterror()1" required><br><br>
+        <input class="inputclass" id="userpass2" type="password" name="CPassword" placeholder="Confirm Password" onClick="reseterror1()" required><br><br>
         <div style="font-family:myfont;"><input type="checkbox" onclick="toggle()">Show Password</div>
         <center>
-         <p class="errormessage"><?php     echo $a=@$_GET['msg'];     ?></p>
-        <p id="innerpopup1" class="errormessage"></p>
-        <p id="innerpopup2" class="errormessage"></p>
+        <p class="errormessage"><?php     echo $a=@$_GET['msg'];     ?></p>
+        <p id="innerpopup1" class="errormessage" style="font-family:myfont;"></p>
+        <p id="innerpopup2" class="errormessage" style="font-family:myfont"></p>
         </center>
 
           <br>
         <input style="font-family: myfont; font-size: 18px;" class="submitclass" type="submit" value="Sign Up!" name="SignUp" onClick="validateuserid();passmatch()">
         </form>
+        </div>
 
   </body>
 </html>
