@@ -46,7 +46,7 @@ body {
 }
 
 #home-div {
-  font-size: 20px;
+  font-size: 25px;
   margin: 30px 20px;
 }
 
@@ -72,27 +72,6 @@ body {
   padding: 10px 20px;
   margin-top: 20px;
   color: black;
-}
-
-.files-menu {
-  margin-left: 20px;
-  padding: 10px 20px;
-  width: 80%;
-  background-color: lightgray;
-  text-decoration: none;
-  color: black;
-  border-radius: 10px;
-  border: 0;
-  border-color: black;
-  box-shadow: 1px 1px 3px 0px;
-}
-
-.files-menu:hover {
-  padding: 10px 20px;
-  background-color: Steelblue;
-  color: white;
-  border-radius: 5px;
-  box-shadow: 2px 3px 10px 0px rgb(0, 0, 0);
 }
 
 #profile {
@@ -158,8 +137,9 @@ h1, button {
 .button-one, .button-two, .button-three, .button-four {
   font-size: 20px;
   font-family: myfont;
-  border-radius: 7px;
+  border-radius: 5px;
   margin-left: 15%;
+  cursor: pointer;
 }
 
 /*Button One*/
@@ -168,8 +148,7 @@ h1, button {
   outline: none;
   background-color: #27ae60;
   border: none;
-  border-radius: 5px;
-  box-shadow: 0 3px #95a5a6;
+  box-shadow: 0 2.5px #95a5a6;
 }
 
 .button-one:hover {
@@ -178,13 +157,12 @@ h1, button {
 
 .button-one:active {
   background-color: #2ecc71;
-  box-shadow: 0 5px #95a5a6;
+  box-shadow: 0 3px #95a5a6;
   transform: translateY(5px);
 }
 
 /*Button Two*/
 .button-two {
-  border-radius: 5px;
   background-color: #d35400;
   border: none;
   padding: 8px 27px;
@@ -192,8 +170,11 @@ h1, button {
   transition: all 0.5s;
 }
 
+.button-two:hover {
+  box-shadow: 0px 0px 5px 0px lightgray;
+}
+
 .button-two span {
-  cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
@@ -218,7 +199,7 @@ h1, button {
   position: relative;
   background-color: #f39c12;
   border: none;
-  padding: 8px 47px;
+  padding: 8px 47.5px;
   text-align: center;
   -webkit-transition-duration: 0.4s;
   /* Safari */
@@ -240,7 +221,7 @@ h1, button {
   position: absolute;
   padding-top: 300%;
   padding-left: 350%;
-  margin-left: -46px !important;
+  margin-left: -47px !important;
   margin-top: -100%;
   opacity: 0;
   transition: all 0.8s

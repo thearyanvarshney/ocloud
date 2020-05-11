@@ -1,0 +1,60 @@
+@font-face {
+  src: url("../font/AlegreyaItalic.ttf");
+  font-family: myfont;
+}
+
+html, body {
+  background: linear-gradient(to right, #4568dc, #b06ab3);
+  height: 100%;
+  overflow: hidden;
+}
+
+div.inner {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  height: 86%;
+  width: 50%;
+  border-radius: 20px;
+  text-align: center;
+  font-family: myfont;
+}
+
+div.profile {
+  width: 100%;
+  height: 47%;
+  border-radius: 20px;
+}
+
+div.content {
+  height: 53%;
+  width: 100%;
+  background-color: lightgrey;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px:
+}
+
+.button {
+  padding: 8px 15px;
+  border-radius: 30px;
+  border: 5px solid steelblue;
+  background: linear-gradient(to right, white, pink);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s ease-out;
+  font-family: myfont;
+  font-size: 15px;
+  transition: : box-shadow 10s;
+}
+
+.button:hover {
+  background-size: 100% 100%;
+  box-shadow: 0px 5px 10px 0px gray;
+}

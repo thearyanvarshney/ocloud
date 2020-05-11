@@ -34,7 +34,7 @@ charset=UTF-8">
 				</div><br>
 			<!--DIV ==> Profile contain div-->
 			<div id="profile">
-				<a href="profile.html">
+				<a onclick="runprofile()" style="cursor:pointer">
 					<img id="profile-pic" src="picture/smile.png">
 				</a>
 			</div>
