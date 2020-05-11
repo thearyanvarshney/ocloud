@@ -1,164 +1,178 @@
-@font-face
-{
-	font-family:myfont;
-	src:url(../font/alegreya.ttf);
+@font-face {
+  font-family: myfont;
+  src: url(../font/alegreya.ttf);
 }
-*{
-	margin: 0;
-	box-sizing: border-box;
-}
-body{
-	border-radius: 10px;
-	background-color: white;
-	box-sizing: border-box;
-	background-color: #85C1E9;
 
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
+
+body {
+  border-radius: 10px;
+  background-color: white;
+  box-sizing: border-box;
+  background-color: #85C1E9;
+}
+
 #dash {
-	box-sizing: border-box;
-	height: 100%;
-	width: 100%;
-	position: fixed;
-
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  position: fixed;
 }
+
 #col1 {
-	box-sizing: border-box;
-	float: left;
-	height: 100%;
-	width: 17%;
-	background-color: steelblue;
-	z-index: 1000;
-	font-family: myfont;
-}
-#logo-div {
-	box-sizing: border-box;
-	background-image: url("../picture/mainlogo.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 8%;
-	width: 80%;
-	margin: 12% 10%;
-	border: 2px solid black;
-	border-radius: 10px;
-	box-shadow: 2px 3px 10px 0px rgb(0,0,0);
-}
-#home-div {
-	font-size: 20px;
-	margin: 30px 20px;
-}
-#home-div>a {
-	cursor: pointer;
-  	list-style: none;
-  	text-decoration: none;
-  	color: black;
-}
-#home-div>a>img {
-	float: left;
-	width: 30px;
-	height: 30px;
-	margin-right: 7px;
-	margin-left: 28%;
-}
-.files-heading {
-	border-radius: 10px;
-	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
-	background: lightgray;
-	padding: 10px 20px;
-	margin-top: 20px;
-	color: black;
-}
-.files-menu {
-	margin-left: 20px;
-	padding: 10px 20px;
-	width: 80%;
-	background-color: lightgray;
-  	text-decoration: none;
-  	color: black;
-	border-radius: 10px;
-	border: 0;
-	border-color: black;
-	box-shadow: 1px 1px 3px 0px;
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  width: 17%;
+  background-color: steelblue;
+  z-index: 1000;
+  font-family: myfont;
 }
 
-.files-menu:hover{
-	padding: 10px 20px;
-	background-color: Steelblue;
-	color: white;
-	border-radius: 5px;
-	box-shadow: 2px 3px 10px 0px rgb(0,0,0);
+#logo-div {
+  box-sizing: border-box;
+  background-image: url("../picture/mainlogo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 8%;
+  width: 80%;
+  margin: 12% 10%;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 3px 10px 0px rgb(0, 0, 0);
 }
+
+#home-div {
+  font-size: 20px;
+  margin: 30px 20px;
+}
+
+#home-div>a {
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+#home-div>a>img {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+  margin-left: 28%;
+}
+
+.files-heading {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  background: lightgray;
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: black;
+}
+
+.files-menu {
+  margin-left: 20px;
+  padding: 10px 20px;
+  width: 80%;
+  background-color: lightgray;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  border: 0;
+  border-color: black;
+  box-shadow: 1px 1px 3px 0px;
+}
+
+.files-menu:hover {
+  padding: 10px 20px;
+  background-color: Steelblue;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 3px 10px 0px rgb(0, 0, 0);
+}
+
 #profile {
-	margin-top: 10px;
-	box-sizing: border-box;
-	font-size: 20px;
-	text-align: center;
-	color: black;
+  margin-top: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: center;
+  color: black;
 }
+
 #profile-pic {
-	height: 140px;
-	width: 140px;
-	border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
 }
+
 #logout-div {
-	box-sizing: border-box;
-	font-size: 24px;
-	color: black;
-	position: fixed;
-	margin-top: 1%;
-	margin-left: 58px;
-	padding: 8px 16px;
-	border-radius: 10px;
-	cursor: pointer;
-  	list-style: none;
-  	text-decoration: none;
+  box-sizing: border-box;
+  font-size: 24px;
+  color: black;
+  position: fixed;
+  margin-top: 1%;
+  margin-left: 58px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
 }
-#logout-div:hover{
-	background-color: Steelblue;
-	color: white;
-	border-radius: 10px;
-	box-shadow: 2px 3px 10px 0px rgb(0,0,0);
+
+#logout-div:hover {
+  background-color: Steelblue;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 3px 10px 0px rgb(0, 0, 0);
 }
 
 #col2 {
-	box-sizing: border-box;
-	float: left;
-	height: 100%;
-	width: 83%;
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  width: 83%;
 }
-#pagecontainer
-{
-	height:100%;
-	width:100%;
+
+#pagecontainer {
+  height: 100%;
+  width: 100%;
 }
-h1, button{
+
+h1, button {
   padding: 20px;
 }
-.main{
+
+.main {
   width: 100%;
-	font-family: myfont;
+  font-family: myfont;
 }
-.sub-main{
+
+.sub-main {
   width: 30%;
 }
-.button-one, .button-two, .button-three, .button-four
-{
-  	font-size:20px;
-	font-family: myfont;
-	border-radius: 7px;
-	margin-left: 15%;
+
+.button-one, .button-two, .button-three, .button-four {
+  font-size: 20px;
+  font-family: myfont;
+  border-radius: 7px;
+  margin-left: 15%;
 }
 
 /*Button One*/
 .button-one {
-  padding:7px 45px;
+  padding: 7px 45px;
   outline: none;
   background-color: #27ae60;
   border: none;
-  border-radius:5px;
+  border-radius: 5px;
   box-shadow: 0 3px #95a5a6;
 }
 
-.button-one:hover{
+.button-one:hover {
   background-color: #2ecc71;
 }
 
@@ -168,17 +182,15 @@ h1, button{
   transform: translateY(5px);
 }
 
-
 /*Button Two*/
 .button-two {
   border-radius: 5px;
-  background-color:#d35400;
+  background-color: #d35400;
   border: none;
   padding: 8px 27px;
   width: auto;
   transition: all 0.5s;
 }
-
 
 .button-two span {
   cursor: pointer;
@@ -201,67 +213,67 @@ h1, button{
   right: 0;
 }
 
-
 /*Button Three*/
 .button-three {
-    position: relative;
-    background-color: #f39c12;
-    border: none;
-    padding: 8px 47px;
-
-    text-align: center;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
+  position: relative;
+  background-color: #f39c12;
+  border: none;
+  padding: 8px 47px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
 }
 
-.button-three:hover{
-   background:#fff;
-   box-shadow:0px 2px 10px 5px #97B1BF;
-   color:#000;
+.button-three:hover {
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px #97B1BF;
+  color: #000;
 }
 
 .button-three:after {
-    content: "";
-    background: #f1c40f;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -46px !important;
-    margin-top: -100%;
-    opacity: 0;
-    transition: all 0.8s
+  content: "";
+  background: #f1c40f;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -46px !important;
+  margin-top: -100%;
+  opacity: 0;
+  transition: all 0.8s
 }
 
 .button-three:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-}
-.button-four {
-  	padding:10px 30px;
-  	outline: none;
-  	background-color: #95a5a6;
-  	border: none;
-	color: black;
-	margin-top: 10%;
-	margin-left: 23%;
-  	border-radius:5px;
-  	box-shadow: 0 3px black;
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
 }
 
-.button-four:hover{
+.button-four {
+  padding: 10px 30px;
+  outline: none;
+  background-color: #95a5a6;
+  border: none;
+  color: black;
+  margin-top: 10%;
+  margin-left: 23%;
+  border-radius: 5px;
+  box-shadow: 0 3px black;
+}
+
+.button-four:hover {
   background-color: #362d26;
-	box-shadow: 0 3px #95a5a6;
-	color:aliceblue;
+  box-shadow: 0 3px #95a5a6;
+  color: aliceblue;
 }
 
 .button-four:active {
-  color:white;
-background-color:#565350;
+  color: white;
+  background-color: #565350;
   box-shadow: 0 3px #95a5a6;
   transform: translateY(5px);
 }

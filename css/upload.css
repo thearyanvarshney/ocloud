@@ -1,5 +1,4 @@
-@font-face
-{
+@font-face {
   font-family: myfont;
   src: url("../font/Markazi.ttf");
 }
@@ -8,6 +7,7 @@
   width: 100%;
   position: relative;
 }
+
 .file-area input[type=file] {
   position: absolute;
   width: 100%;
@@ -19,6 +19,7 @@
   opacity: 0;
   cursor: pointer;
 }
+
 .file-area .file-dummy {
   width: 100%;
   padding: 30px;
@@ -27,24 +28,30 @@
   text-align: center;
   transition: background 0.3s ease-in-out;
 }
+
 .file-area .file-dummy .success {
   display: none;
 }
+
 .file-area:hover .file-dummy {
   background: rgba(255, 255, 255, 0.1);
 }
-.file-area input[type=file]:focus + .file-dummy {
+
+.file-area input[type=file]:focus+.file-dummy {
   outline: 2px solid rgba(255, 255, 255, 0.5);
   outline: -webkit-focus-ring-color auto 5px;
 }
-.file-area input[type=file]:valid + .file-dummy {
+
+.file-area input[type=file]:valid+.file-dummy {
   border-color: rgba(0, 255, 0, 0.4);
   background-color: rgba(0, 255, 0, 0.3);
 }
-.file-area input[type=file]:valid + .file-dummy .success {
+
+.file-area input[type=file]:valid+.file-dummy .success {
   display: inline-block;
 }
-.file-area input[type=file]:valid + .file-dummy .default {
+
+.file-area input[type=file]:valid+.file-dummy .default {
   display: none;
 }
 
@@ -75,7 +82,7 @@ body {
   background: -ms-linear-gradient(top, #053777 0%, #00659b 100%);
   /* IE10+ */
   background: linear-gradient(to bottom, #053777 0%, #00659b 100%);
-	font-family: myfont;
+  font-family: myfont;
   /* W3C */
 }
 
@@ -93,6 +100,7 @@ label {
   font-size: 18px;
   overflow: hidden;
 }
+
 label span {
   float: right;
   text-transform: none;
@@ -112,6 +120,7 @@ label span {
   color: #fff;
   font-weight: 200;
 }
+
 .form-controll:focus {
   outline: 2px solid rgba(255, 255, 255, 0.5);
   outline: -webkit-focus-ring-color auto 5px;
@@ -133,11 +142,10 @@ button {
   max-width: 500px;
   margin: auto;
   margin-bottom: 30px;
-	
 }
-.alignclass
-{
-	text-align: center;
+
+.alignclass {
+  text-align: center;
 }
 
 .back-to-article {
@@ -154,6 +162,7 @@ button {
   transition: all 0.3s ease-in-out;
   opacity: 0.6;
 }
+
 .back-to-article:hover {
   opacity: 1;
   background: rgba(0, 0, 0, 0.8);

@@ -1,23 +1,24 @@
-body
-{
+body {
   background-image: url("../picture/cloud1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-html,body
-{
-    height:100%;
+
+html, body {
+  height: 100%;
 }
-@font-face{
+
+@font-face {
   font-family: myfont;
   src: url("../font/Alegreyaitalic.ttf");
 }
-#header{
+
+#header {
   box-sizing: border-box;
   background-image: url(../picture/abcd.jpg);
   height: 90px;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   margin-bottom: 6px;
   border-radius: 10px;
   position: fixed;
@@ -27,6 +28,7 @@ html,body
   z-index: 999;
   font-family: myfont;
 }
+
 #header-left-logo {
   float: left;
   background-image: url("../picture/mainlogo.png");
@@ -34,25 +36,27 @@ html,body
   height: 80px;
   width: 250px;
   margin: 5px 8%;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  border :2px solid black;
+  border: 2px solid black;
 }
-#header-right{
-  float:right;
+
+#header-right {
+  float: right;
   color: white;
   margin-top: 32px;
   margin-right: 8%;
 }
-#header-right a:hover,a.active{
+
+#header-right a:hover, a.active {
   background-color: Steelblue;
   color: white;
-  box-shadow: 2px 3px 10px 0px rgb(0,0,0);
+  box-shadow: 2px 3px 10px 0px rgb(0, 0, 0);
   border-radius: 5px;
 }
-.header-right-menu{
 
-  margin-right:20px;
+.header-right-menu {
+  margin-right: 20px;
   font-size: 18px;
   padding: 8px 16px;
   color: black;
@@ -61,61 +65,57 @@ html,body
   text-decoration: none;
 }
 
-#signupformdesign
-{
-    margin: auto;
-    background-color:rgba(105,105,105,0.9);
-    width: 35%;
-    border-radius: 20px;
-    height: auto;
-    padding-top:1%;
-    padding-bottom: 2%;
-    text-align: center;
-    font-family: myfont;
+#signupformdesign {
+  margin: auto;
+  background-color: rgba(105, 105, 105, 0.9);
+  width: 35%;
+  border-radius: 20px;
+  height: auto;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  text-align: center;
+  font-family: myfont;
+}
 
+.inputclass {
+  border-radius: 10px;
+  width: 38%;
+  padding: 1.5%;
+  text-align: center;
+  border: 1px solid black;
 }
-.inputclass
-{
-    border-radius: 10px;
-    width:38%;
-    padding:1.5%;
-    text-align: center;
-    border:1px solid black;
-}
-.inputclass:hover
-{
+
+.inputclass:hover {
   box-shadow: 0px 0px 7px 0px black;
 }
 
-.errormessage
-{
-  color:white;
+.errormessage {
+  color: white;
   font-family: verdana;
   background-color: red;
-  border-radius:5px;
+  border-radius: 5px;
   width: 80%;
 }
 
-.submitclass
-{
+.submitclass {
   background-color: #c5c5c5;
   border-radius: 10px;
   border: 0px;
   width: 20%;
-  padding:2%;
+  padding: 2%;
   transition-duration: 0.2s;
 }
-.submitclass:hover
-{
-  box-shadow: 2px 3px 10px 0px rgb(0,0,0);
+
+.submitclass:hover {
+  box-shadow: 2px 3px 10px 0px rgb(0, 0, 0);
   background-color: #1F618D;
   color: white;
 }
-img
-{
+
+img {
   border-radius: 20px;
 }
-.breakclass
-{
-  padding:4%
+
+.breakclass {
+  padding: 4%
 }
