@@ -4,9 +4,10 @@
 <head>
   <title>Personal Profile</title>
   <link rel="stylesheet" href="css/profile.css">
+  <script src="js/profile.js"></script>
 </head>
 
-<body>
+<body onclick="closewindow(event)">
   <div class="inner">
     <div class="profile">
       <br>
@@ -19,7 +20,15 @@
       <h3><b>Contact:</b> 9997169094</h3>
       <h3><b>Username:</b> anuj.arora</h3>
       <h3><b>Password: **********</b></h3>
-      <button class="button" type="button" name="ChPassword">Change Password</button>
+      <button id="myBtn" type="button" name="ChPassword" onclick="openmodal()">Change Password</button>
+      <div id="myModal" class="modal" >
+        <div class="modal-content">
+          <span class="close" onclick="closemodal()">&times;</span>
+          <p>Change Password</p>
+
+        </div>
+
+      </div>
     </div>
   </div>
 </body>
