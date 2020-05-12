@@ -10,6 +10,7 @@
 	<body>
 		<center><h1 class="home-title"><span>Hello <?php echo $_SESSION['username']; ?>!</span>
 			<span>View, Edit & Download Your Files!</span></h1></center>
+			<br>
 <div class="container">
 	<table>
 		<thead>
@@ -34,8 +35,11 @@
                                 <td><?php echo $row['title']; ?></td>
                                 <td><?php echo $row['filename']; ?></td>
                                 <td><?php echo $row['date']; ?></td>
-                                <td><a href="USerfiles/<?php echo $username.$row['filename']; ?>" target="_blank">View</a> / 
-                                <a href="USerfiles/<?php echo $username.$row['filename']; ?>" download>Download</td>
+                                <td>
+																	<a href="USerfiles/<?php echo $username.$row['filename']; ?>" target="_blank"><button class="button button2">View</button></a>
+                                	<a href="USerfiles/<?php echo $username.$row['filename']; ?>" download><button class="button button1" name="download">Download</button></a>
+																	<a href=""><button class="button button3">Delete</button></a>
+																</td>
                             </tr>
                         <?php } ?>
 		</tbody>
