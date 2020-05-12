@@ -72,24 +72,45 @@ img {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 .modal-content {
-  background-color: #fefefe;
   margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  background-color: #fefefe;
+  border: 2px solid #888;
+  width: 40%;
+  height: 40%;
 }
 
 /* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 30px;
 }
 
-.close:hover,
-.close:focus {
+.close:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+.modal-header
+{
+  background-color: lightgrey;
+  padding: 20px;
+}
+.heading
+{
+  font-size: 30px;
+  margin:0;
+}
+.passwordcontent
+{
+  padding: 30px;
+}
+
+.inputclass
+{
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }

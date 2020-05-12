@@ -20,11 +20,23 @@
       <h3><b>Contact:</b> 9997169094</h3>
       <h3><b>Username:</b> anuj.arora</h3>
       <h3><b>Password: **********</b></h3>
-      <button id="myBtn" type="button" name="ChPassword" onclick="openmodal()">Change Password</button>
+      <button id="myBtn" type="button" name="ChPassword" onclick="openmodal()">Click To Change Password</button>
       <div id="myModal" class="modal" >
         <div class="modal-content">
-          <span class="close" onclick="closemodal()">&times;</span>
-          <p>Change Password</p>
+          <div class="modal-header">
+              <p class="heading">Change Password<span class="close" onclick="closemodal()">&times;</span></p>
+        </div>
+        <div class="passwordcontent">
+          <form action="index.html" method="post">
+            <input class="inputclass" type="password" name="npassword" placeholder="New Password" required>
+            <input class="inputclass" type="password" name="cPassword" placeholder="Confirm Password" required>
+            <input type="submit" name="Submit">
+
+          </form>
+
+        </div>
+
+
 
         </div>
 
