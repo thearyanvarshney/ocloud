@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 08, 2020 at 06:39 PM
+-- Generation Time: May 12, 2020 at 09:19 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -37,16 +37,6 @@ CREATE TABLE `user` (
   `password` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`id`, `fname`, `lname`, `dob`, `phone`, `username`, `password`) VALUES
-(1, 'SMS', 'Sendie', '2020-05-11', 488, 'abkg', 'password'),
-(2, 'Aryan', 'Varshney', '0000-00-00', 9457357157, 'iamaryan', 'abcdef'),
-(3, 'yogesh', 'sharma', '0000-00-00', 123456789, 'yogesh', '123456'),
-(4, 'shivam', 'sharma', '0000-00-00', 123456789, 'shivam', '123456');
-
 -- --------------------------------------------------------
 
 --
@@ -61,13 +51,6 @@ CREATE TABLE `userfiles` (
   `filename` varchar(255) NOT NULL,
   `date` date NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `userfiles`
---
-
-INSERT INTO `userfiles` (`id`, `username`, `title`, `caption`, `filename`, `date`) VALUES
-(15, 'iamaryan', 'aaa', 'aaa', 'pexels-photo-1269968.jpeg', '2020-05-08');
 
 --
 -- Indexes for dumped tables
@@ -93,7 +76,7 @@ ALTER TABLE `userfiles`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `userfiles`
