@@ -26,7 +26,7 @@ charset=UTF-8">
 				<button class="button-one" onclick="runupload()">Upload File</button>
 			</div><br>
 				<div class="submain">
-					<button class="button-two" onclick="rundownload()"><span>Download File</span></button>
+					<button class="button-two" onclick="rundownload()"><span>View File</span></button>
 				</div><br>
 				<div class="submain">
 					<button class="button-three" onclick="rundelete()">Delete File</button>

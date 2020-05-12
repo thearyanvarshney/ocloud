@@ -163,37 +163,42 @@ h1, button {
 
 /*Button Two*/
 .button-two {
-  background-color: #d35400;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
   border: none;
-  padding: 8px 27px;
-  width: auto;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  width: 179px;
   transition: all 0.5s;
-}
-
-.button-two:hover {
-  box-shadow: 0px 0px 5px 0px lightgray;
+  cursor: pointer;
 }
 
 .button-two span {
+  cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
 .button-two span:after {
-  content: "  »";
-  position: relative;
+  content: '\00bb';
+  position: absolute;
   opacity: 0;
   top: 0;
   right: -20px;
   transition: 0.5s;
 }
 
+.button-two:hover span {
+  padding-right: 25px;
+}
+
 .button-two:hover span:after {
   opacity: 1;
   right: 0;
 }
-
 /*Button Three*/
 .button-three {
   position: relative;
