@@ -19,6 +19,7 @@ div.inner {
   border-radius: 20px;
   text-align: center;
   font-family: myfont;
+  box-shadow: 0px 0px 20px 2px black;
 }
 
 div.profile {
@@ -108,9 +109,14 @@ img {
 
 .inputclass
 {
+  font-family: myfont;
   text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  border: 2px solid black;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 10px 20px;
 }
