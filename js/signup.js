@@ -43,3 +43,15 @@ function reseterror2() {
 function reseterror3() {
   document.getElementById("innerpopup3").innerHTML = "";
 }
+
+function toggle() {
+  var x = document.getElementById("userpass1");
+  var y = document.getElementById("userpass2");
+  if (x.type === "password") {
+    x.type = "text";
+    y.type = "text";
+  } else {
+    x.type = "password";
+    y.type = "password";
+  }
+}
