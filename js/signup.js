@@ -1,55 +1,49 @@
-function passmatch()
-{
-	var x,y;
+function validate() {
+  var a, b, c, d, z = 0;
+  var re = new RegExp("^[a-zA-Z0-9._@]+$");
+  var reg = new RegExp(/\d{10}/);
+  a = document.getElementById("userpass1").value;
+  b = document.getElementById("userpass2").value;
+  c = document.getElementById("username").value;
+  d = document.getElementById("mobnum").value;
 
-	x=document.getElementById("userpass1").value;
-	y=document.getElementById("userpass2").value;
-	if(x!=y)
-	{
-     document.getElementById("innerpopup1").innerHTML="Passwords Don't Match!";
-     document.getElementById("signupform").action="javascript:void(0)";
-     docuemt.getElementById("signupform").method="";
-	}
-	else {
-		document.getElementById('signupform').action="login.php";
-		document.getElementById("signupform").method="post";
-	}
-}
-function reseterror1()
-{
-	document.getElementById("innerpopup1").innerHTML="";
-}
-function reseterror2()
-{
-	document.getElementById("innerpopup2").innerHTML="";
-}
-function validateuserid()
-{
-    var x=document.getElementById("username").value;
-    var re = new RegExp("^[a-zA-Z0-9._@]+$");
-    if(!x.length==0)
-    {
-	       if(!re.test(x))
-	       {
-            document.getElementById("innerpopup2").innerHTML="Username is Invalid!";
-            document.getElementById("signupform").action="javascript:void(0)";
-            docuemt.getElementById("signupform").method="";
-	       }
-       
+  /*This if condition will match passwords*/
+  if (a != b) {
+    alert("hello1");
+    document.getElementById("innerpopup1").innerHTML = "Passwords Don't Match!";
+    z = z + 1;
+  }
+  /*This is condition will validate Username*/
+  if (!c.length == 0) {
+    if (!re.test(c)) {
+      alert("hello2");
+      document.getElementById("innerpopup2").innerHTML = "Username is Invalid!";
+      z = z + 1;
     }
+  }
+  /*This if condition will validate Monile Number*/
+  if (!d.length == 0) {
+    if (!reg.test(d)) {
+      alert("hello3");
+      document.getElementById("innerpopup3").innerHTML = "Contact Number is Invalid!";
+      z = z + 1;
+    }
+  }
+  if (z != 0) {
+    document.getElementById("signupform").action = "javascript:void(0)";
+    document.getElementById("signupform").method = "";
+  }
 }
-function toggle()
-{
-    var x = document.getElementById("userpass1");
-    var y = document.getElementById("userpass2");
-    if (x.type === "password")
-    {
-        x.type = "text";
-        y.type = "text";
-    }
-    else
-    {
-        x.type = "password";
-        y.type = "password";
-    }
+
+
+function reseterror1() {
+  document.getElementById("innerpopup1").innerHTML = "";
+}
+
+function reseterror2() {
+  document.getElementById("innerpopup2").innerHTML = "";
+}
+
+function reseterror3() {
+  document.getElementById("innerpopup3").innerHTML = "";
 }

@@ -29,22 +29,23 @@
         <br><br>
         <input class="inputclass" type="date" name="DateOfBirth" placeholder="Date Of Birth" required>
         <br><br>
-        <input class="inputclass" type="tel" name="ContactNum" placeholder="Contact Number" maxlength="10" required>
+        <input class="inputclass" id="mobnum" type="tel" name="ContactNum" placeholder="Contact Number" maxlength="10" oninput="reseterror3()" required>
         <br><br>
-        <input class="inputclass" id="username" type="text" name="Username" placeholder="Username" onclick="reseterror2()" required>
+        <input class="inputclass" id="username" type="text" name="Username" placeholder="Username" oninput="reseterror2()" required>
         <br><br>
-        <input class="inputclass" id="userpass1" type="password" name="Password" placeholder="Password" onClick="reseterror1()" required>
+        <input class="inputclass" id="userpass1" type="password" name="Password" placeholder="Password" oninput="reseterror1()" required>
         <br><br>
-        <input class="inputclass" id="userpass2" type="password" name="CPassword" placeholder="Confirm Password" onClick="reseterror1()" required><br><br>
+        <input class="inputclass" id="userpass2" type="password" name="CPassword" placeholder="Confirm Password" oninput="reseterror1()" required><br><br>
         <div style="font-family:myfont;"><input type="checkbox" onclick="toggle()">Show Password</div>
         <center>
         <p class="errormessage"><?php     echo $a=@$_GET['msg'];     ?></p>
-        <p id="innerpopup1" class="errormessage" style="font-family:myfont;"></p>
+        <p id="innerpopup1" class="errormessage" style="font-family:myfont"></p>
         <p id="innerpopup2" class="errormessage" style="font-family:myfont"></p>
+        <p id="innerpopup3" class="errormessage" style="font-family:myfont"></p>
         </center>
 
           <br>
-        <input style="font-family: myfont; font-size: 18px;" class="submitclass" type="submit" value="Sign Up!" name="SignUp" onClick="validateuserid();passmatch()">
+        <input style="font-family: myfont; font-size: 18px;" class="submitclass" type="submit" value="Sign Up!" name="SignUp" onClick="validate()">
         </form>
         </div>
 
