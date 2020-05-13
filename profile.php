@@ -38,10 +38,10 @@
           <form action="changepassword.php" method="post">
             <input class="inputclass" type="password" name="npassword" placeholder="New Password" required>
             <input class="inputclass" type="password" name="cPassword" placeholder="Confirm Password" required>
-            <input type="submit" name="Submit">
+            <input class="buttonstyle" type="submit" name="Submit">
 
           </form>
-            
+
 
         </div>
 
@@ -53,7 +53,7 @@
       <?php } ?>
     </div>
   </div>
-    
+
 </body>
 
 </html>
