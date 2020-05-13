@@ -11,5 +11,5 @@ function rundelete() {
 }
 
 function runprofile() {
-  document.getElementById("pagecontainer").src = "profile.html";
+  document.getElementById("pagecontainer").src = "profile.php";
 }
