@@ -9,14 +9,12 @@ function validate() {
 
   /*This if condition will match passwords*/
   if (a != b) {
-    alert("hello1");
     document.getElementById("innerpopup1").innerHTML = "Passwords Don't Match!";
     z = z + 1;
   }
   /*This is condition will validate Username*/
   if (!c.length == 0) {
     if (!re.test(c)) {
-      alert("hello2");
       document.getElementById("innerpopup2").innerHTML = "Username is Invalid!";
       z = z + 1;
     }
@@ -24,7 +22,6 @@ function validate() {
   /*This if condition will validate Monile Number*/
   if (!d.length == 0) {
     if (!reg.test(d)) {
-      alert("hello3");
       document.getElementById("innerpopup3").innerHTML = "Contact Number is Invalid!";
       z = z + 1;
     }
@@ -34,7 +31,6 @@ function validate() {
     document.getElementById("signupform").method = "";
   }
 }
-
 
 function reseterror1() {
   document.getElementById("innerpopup1").innerHTML = "";
