@@ -9,20 +9,20 @@ function validate() {
 
   /*This if condition will match passwords*/
   if (a != b) {
-    document.getElementById("innerpopup1").innerHTML = "Passwords Don't Match!";
+    document.getElementById("innerpopup1").innerHTML = "&#9888; Passwords Don't Match!";
     z = z + 1;
   }
   /*This is condition will validate Username*/
   if (!c.length == 0) {
     if (!re.test(c)) {
-      document.getElementById("innerpopup2").innerHTML = "Username is Invalid!";
+      document.getElementById("innerpopup2").innerHTML = "&#9888; Username is Invalid!";
       z = z + 1;
     }
   }
   /*This if condition will validate Monile Number*/
   if (!d.length == 0) {
     if (!reg.test(d)) {
-      document.getElementById("innerpopup3").innerHTML = "Contact Number is Invalid!";
+      document.getElementById("innerpopup3").innerHTML = "&#9888; Contact Number is Invalid!";
       z = z + 1;
     }
   }

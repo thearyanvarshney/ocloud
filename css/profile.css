@@ -53,6 +53,7 @@ img {
   font-family: myfont;
   font-size: 15px;
   transition: : box-shadow 10s;
+  outline: none;
 }
 
 #myBtn:hover {
@@ -119,10 +120,11 @@ img {
   background-color: transparent;
   border-radius: 20px;
   padding: 10px 20px;
+  outline: none;
 }
 
 .buttonstyle {
-  margin-top: 6px;
+  margin-top: 10px;
   font-family: myfont;
   font-size: 17px;
   box-shadow: 0px 0px 8px 2px grey;
@@ -130,10 +132,16 @@ img {
   padding: 12px 27px;
   border: none;
   color: white;
+  border-radius: 4px;
+  outline: none;
 }
 
 .buttonstyle:active {
   transform: translateY(3px);
   color: steelblue;
   box-shadow: 0px 0px 8px 2px steelblue;
+}
+#inner
+{
+  margin: 0;
 }

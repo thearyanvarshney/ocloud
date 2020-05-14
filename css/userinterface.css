@@ -154,6 +154,7 @@ h1, button {
   background-color: #27ae60;
   border: none;
   box-shadow: 0 2.5px #95a5a6;
+  outline: none;
 }
 
 .button-one:hover {
@@ -178,6 +179,7 @@ h1, button {
   width: 179px;
   transition: all 0.5s;
   cursor: pointer;
+  outline: none;
 }
 
 .button-two span {
@@ -214,11 +216,10 @@ h1, button {
   border: none;
   padding: 8px 47.5px;
   text-align: center;
-  -webkit-transition-duration: 0.4s;
-  /* Safari */
   transition-duration: 0.4s;
   text-decoration: none;
   overflow: hidden;
+  outline: none;
 }
 
 .button-three:hover {
