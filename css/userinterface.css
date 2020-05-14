@@ -37,7 +37,7 @@ body {
   background-image: url("../picture/mainlogo.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 8%;
+  height: 10%;
   width: 80%;
   margin: 12% 10%;
   border: 2px solid black;
@@ -47,7 +47,12 @@ body {
 
 #home-div {
   font-size: 25px;
-  margin: 30px 20px;
+  border: 2px solid #262335;
+  border-radius: 4px;
+  margin: auto;
+  width: 45%;
+  text-align: center;
+  padding: 4px;
 }
 
 #home-div>a {
@@ -58,11 +63,11 @@ body {
 }
 
 #home-div>a>img {
-  float: left;
-  width: 30px;
   height: 30px;
-  margin-right: 7px;
-  margin-left: 28%;
+  margin-left: auto;
+float: left;
+
+
 }
 
 .files-heading {
@@ -190,7 +195,10 @@ h1, button {
   right: -20px;
   transition: 0.5s;
 }
-
+.button-two:hover
+{
+  box-shadow: 0px 0px 10px 1px white;
+}
 .button-two:hover span {
   padding-right: 25px;
 }
