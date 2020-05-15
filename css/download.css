@@ -14,8 +14,7 @@ body {
 
 body {
   margin: 0;
-  background-image: linear-gradient(45deg, #49a09d, #5f2c82);
-  background-size: contain;
+ background: linear-gradient(to bottom right, #5c258d, #4389a2); background-size: contain;
   font-weight: 100;
   justify-content: center;
 }
