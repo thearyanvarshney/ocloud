@@ -1,0 +1,31 @@
+@font-face {
+  src:url("../font/josefin.ttf");
+  font-family: myfont;
+}
+html, body {
+  font-family: myfont;
+  color: black;
+  background: linear-gradient(to right, #3a6186, #89253e);
+}
+h1{
+  text-align: center;
+  margin-top: 5%;
+  color: white;
+  animation: fade 3s;
+  text-shadow: 2px 2px 10px black;
+}
+table{
+  margin: auto;
+}
+th,td
+{
+  font-family: myfont;
+  color: rgba(10,10,10,1);
+  padding:15px;
+  width: auto;
+  background-color: rgba(255,255,255,0.3);
+}
+@keyframes fade {
+  from {opacity: 0.1;}
+  to  {opacity: 1;}
+}

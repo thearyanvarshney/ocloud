@@ -38,7 +38,6 @@
                                 <td>
 																	<a href="USerfiles/<?php echo $username.$row['filename']; ?>" target="_blank"><button class="button button2">View</button></a>
                                 	<a href="USerfiles/<?php echo $username.$row['filename']; ?>" download><button class="button button1" name="download">Download</button></a>
-																	<a href=""><button class="button button3">Delete</button></a>
 																</td>
                             </tr>
                         <?php } ?>

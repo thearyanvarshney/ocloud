@@ -149,7 +149,8 @@ h1, button {
 
 /*Button One*/
 .button-one {
-  padding: 7px 45px;
+  width:70%;
+  padding: 7px;
   outline: none;
   background-color: #27ae60;
   border: none;
@@ -176,7 +177,7 @@ h1, button {
   color: black;
   text-align: center;
   padding: 8px;
-  width: 179px;
+  width: 70%;
   transition: all 0.5s;
   cursor: pointer;
   outline: none;
@@ -214,7 +215,8 @@ h1, button {
   position: relative;
   background-color: #f39c12;
   border: none;
-  padding: 8px 47.5px;
+  padding: 8px;
+  width: 70%;
   text-align: center;
   transition-duration: 0.4s;
   text-decoration: none;
