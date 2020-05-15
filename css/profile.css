@@ -81,6 +81,7 @@ img {
   border: 2px solid #888;
   width: 40%;
   height: 45%;
+  animation: zoomin 1s;
 }
 
 .close {
@@ -141,7 +142,17 @@ img {
   color: steelblue;
   box-shadow: 0px 0px 8px 2px steelblue;
 }
-#inner
-{
+
+#inner {
   margin: 0;
+}
+
+@keyframes zoomin {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }
