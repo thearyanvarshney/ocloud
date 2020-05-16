@@ -7,7 +7,7 @@ function rundownload() {
 }
 
 function rundelete() {
-  document.getElementById("pagecontainer").src = "delete.html";
+  document.getElementById("pagecontainer").src = "delete.php";
 }
 
 function runprofile() {

@@ -37,10 +37,12 @@
                         <td><?php echo $row['filename']; ?></td>
                         <td><?php echo $row['date']; ?></td>
                         <td>
-                            <button class="button button1" name="delete">Delete</button>
+                          <form method="post">
+                            <input type="submit" class="button button3" value="Delete">
+                          </form>
                             </td>
                     </tr>
-                    
+
                 <?php } ?>
             </tbody>
 <script >
