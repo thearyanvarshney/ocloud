@@ -1,5 +1,6 @@
 <?php
   // If the user is logged in, delete the session vars to log them out
+  session_start();
   if (isset($_SESSION['username'])) {
     // Delete the session vars by clearing the $_SESSION array
     $_SESSION = array();
