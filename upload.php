@@ -10,9 +10,9 @@ if (isset($_POST['uploadfile'])) {
     $sql = "INSERT INTO userfiles(username,title,caption,filename,date) Values('$username','$title','$caption','$fname','$date')";
     if (mysqli_query($conn, $sql)) {
          move_uploaded_file($_FILES['files']['tmp_name'], "USerfiles/".$username.$fname);
-        echo 'File Uploaded successfully';
+        header('location:upload.html?msg=File Upload Successfully');
     } else {
-        echo 'Error in upload';
+        header('location:userinterface.php?msg=Error In Upload');
     }
 }
 ?>
