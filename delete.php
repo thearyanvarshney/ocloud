@@ -30,7 +30,7 @@
                         <td><?php echo $row['filename']; ?></td>
                         <td><?php echo $row['date']; ?></td>
                         <td>
-
+                            <p> <?php     echo $a=@$_GET['msg'];     ?></p>
                             <button type="submit" name="delete">Delete</button>
 
                             </td>
