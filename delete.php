@@ -31,7 +31,7 @@
                         <td><?php echo $row['date']; ?></td>
                         <td>
 
-                            <button type="submit" name="delete">Delete</button>
+                            <button type="submit" name="delete" class="button button3">Delete</button>
 
                             </td>
                     </tr>

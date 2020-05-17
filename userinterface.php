@@ -51,7 +51,7 @@ charset=UTF-8">
 		<!--DIV ==> Second column of dashboard which contain Recent items and files viem option-->
 		<div id="col2">
 
-            <iframe id="pagecontainer" src="upload.html"></iframe>
+            <iframe id="pagecontainer" src="upload.php"></iframe>
 
 		</div>
 

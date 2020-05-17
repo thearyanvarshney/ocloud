@@ -1,5 +1,5 @@
 function runupload() {
-  document.getElementById("pagecontainer").src = "upload.html";
+  document.getElementById("pagecontainer").src = "upload.php";
 }
 
 function rundownload() {

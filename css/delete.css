@@ -18,7 +18,9 @@ h1 {
 }
 
 table {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
 }
 
 th, td {
@@ -41,7 +43,7 @@ th, td {
 
 .button {
   border: none;
-  padding: 6px 11px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
