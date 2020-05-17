@@ -1,3 +1,5 @@
+<?php require "header.php"; ?>
+<?php include('dbconfig.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
