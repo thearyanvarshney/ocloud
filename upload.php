@@ -12,7 +12,7 @@ if (isset($_POST['uploadfile'])) {
          move_uploaded_file($_FILES['files']['tmp_name'], "USerfiles/".$username.$fname);
         header('location:upload.html?msg=File Upload Successfully');
     } else {
-        header('location:userinterface.php?msg=Error In Upload');
+        header('location:upload.html?msg=Error In Upload');
     }
 }
 ?>
