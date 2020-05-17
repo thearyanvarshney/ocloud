@@ -6,9 +6,9 @@ if (isset($_POST['delete'])) {
     $username = $_SESSION['username'];
     $sql = "Delete from userfiles where username='$username'";
     if (mysqli_query($conn, $sql)) {
-        header('location:upload.php?msg=File Delete Successfully');
+        header('location:delete.php?msg=File Delete Successfully');
     } else {
-        header('location:upload.php?msg=Error In Delete');
+        header('location:delete.php?msg=Error In Delete');
     }
 }
 

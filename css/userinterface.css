@@ -124,6 +124,7 @@ float: left;
 #pagecontainer {
   height: 100%;
   width: 100%;
+  border:0px;
 }
 
 h1, button {

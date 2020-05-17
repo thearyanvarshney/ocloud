@@ -12,6 +12,7 @@
   <form action="cdelete.php" method="post" enctype="multipart/form-data">
   <h1>Hello <?php echo $_SESSION['username']; ?>! Delete Your Files!</h1>
   <table table="table">
+    <p> <?php     echo $a=@$_GET['msg'];     ?></p>
     <tr>
       <th>Title</th>
       <th>File Name</th>
@@ -30,10 +31,9 @@
                         <td><?php echo $row['filename']; ?></td>
                         <td><?php echo $row['date']; ?></td>
                         <td>
-                            <p> <?php     echo $a=@$_GET['msg'];     ?></p>
                             <button type="submit" name="delete" class="button button3">Delete</button>
+                        </td>
 
-                            </td>
                     </tr>
 
                 <?php } ?>

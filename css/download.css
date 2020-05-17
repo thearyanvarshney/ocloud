@@ -7,7 +7,10 @@
   font-family: myfont2;
   src: url("../font/Roboto.ttf");
 }
-
+@font-face {
+  font-family: myfont3;
+  src: url("../font/Alegreya.ttf");
+}
 body {
   background: linear-gradient(to right, #5c258d, #4389a2);
   background-size: cover;
@@ -87,7 +90,7 @@ h1 {
 
 .container {
   margin: auto;
-  font-family: myfont2;
+  font-family: myfont3;
   text-align: center;
 }
 
@@ -113,11 +116,12 @@ th, tr {
 }
 
 .button {
+  font-family: myfont3;
   border: none;
   padding: 5px 10px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 17px;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 20px;
