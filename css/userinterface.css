@@ -26,7 +26,8 @@ body {
   box-sizing: border-box;
   float: left;
   height: 100%;
-  width: 17%;
+  width: 19%;
+  box-shadow: 2px 2px 10px 0px black;
   background-color: steelblue;
   z-index: 1000;
   font-family: myfont;
@@ -118,7 +119,7 @@ float: left;
   box-sizing: border-box;
   float: left;
   height: 100%;
-  width: 83%;
+  width: 81%;
 }
 
 #pagecontainer {
@@ -258,7 +259,7 @@ h1, button {
   border: none;
   color: black;
   margin-top: 10%;
-  margin-left: 23%;
+  margin-left: 28%;
   border-radius: 5px;
   box-shadow: 0 3px black;
 }
