@@ -3,10 +3,11 @@
 
 <head>
   <link rel="stylesheet" href="css/upload.css">
+  <script src="js/upload.js"></script>
 </head>
 
 <body>
-  <form action="upload.php" method="post" enctype="multipart/form-data">
+  <form action="cupload.php" method="post" enctype="multipart/form-data">
 
     <h1><strong>Upload Your Files</strong></h1>
 
@@ -28,7 +29,8 @@
       </div>
     </div>
     <div class="alignclass">
-      <div class="form-group">
+        <div class="form-group">
+            <p> <?php     echo $a=@$_GET['msg'];     ?></p>
         <button type="submit" name="uploadfile">Upload Files</button>
       </div>
       <div>
@@ -38,3 +40,4 @@
 </body>
 
 </html>
+
