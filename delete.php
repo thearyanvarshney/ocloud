@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="cdelete.php" method="post" enctype="multipart/form-data">
+
   <h1>Hello <?php echo $_SESSION['username']; ?>! Delete Your Files!</h1>
   <table table="table">
     <tr>
@@ -30,15 +30,17 @@
                         <td><?php echo $row['filename']; ?></td>
                         <td><?php echo $row['date']; ?></td>
                         <td>
+                            <form action="cdelete.php" method="post" enctype="multipart/form-data">
                             <button type="submit" name="delete">Delete</button>
+                            </form>
                             </td>
                     </tr>
-                    
+
                 <?php } ?>
             </tbody>
 
   </table>
-    </form>
+
 </body>
 
 </html>

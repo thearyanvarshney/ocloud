@@ -8,15 +8,10 @@
   src: url("../font/Roboto.ttf");
 }
 
-html,
-body {}
-
 body {
-  margin: 0;
-  background: linear-gradient(to bottom right, #5c258d, #4389a2);
-  background-size: contain;
+  background: linear-gradient(to right, #5c258d, #4389a2);
+  background-size: cover;
   font-weight: 100;
-  justify-content: center;
 }
 
 h1 {
