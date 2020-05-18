@@ -55,8 +55,7 @@
 				<table>
 					<tr>
                     <th> ID</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
+                    <th>Full Name</th>
                     <th>Date of Birth</th>
                     <th>Contact Number</th>
                     <th>Username</th>
@@ -70,14 +69,13 @@
                     ?>
                     <tr>
                         <td><?php echo $row['id']; ?></td>
-                        <td><?php echo $row['fname']; ?></td>
-                        <td><?php echo $row['lname']; ?></td>
+                        <td><?php echo $row['fname']; ?> <?php echo $row['lname']; ?></td>
                         <td><?php echo $row['dob']; ?></td>
                         <td><?php echo $row['phone']; ?></td>
                         <td><?php echo $row['username']; ?></td>
-                        
+
                                         </tr>
-                    
+
                 <?php } ?>
 				</tbody>
 				</table>
