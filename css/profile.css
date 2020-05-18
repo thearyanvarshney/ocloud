@@ -52,7 +52,6 @@ img {
   transition: background-size 0.5s ease-out;
   font-family: myfont;
   font-size: 15px;
-  transition: : box-shadow 10s;
   outline: none;
 }
 

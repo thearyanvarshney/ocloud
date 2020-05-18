@@ -4,6 +4,7 @@
 <head>
 	<title>Admin's Dashboard</title>
 	<link rel="stylesheet" type="text/css" href="css/adminpanel.css">
+	<script type="text/javascript" src="js/adminpanel.js"></script>
 </head>
 
 <body>
@@ -37,9 +38,9 @@
 	<div id="body">
 		<div id="body-left">
 			<div id="body-left-menu">
-				<button type="button" class="body-left-options">Users</button><br>
-				<button type="button" class="body-left-options">Users Details</button><br>
-				<button type="button" class="body-left-options">Reports</button><br>
+				<button type="button" class="body-left-options" onclick="showdivuser()">Users</button></div>
+			<div id="body-left-menu">
+				<button type="button" class="body-left-options" onclick="showdivissue()">Reports</button>
 			</div>
 			<div id="logout-div">
 				<a href="index.html">
@@ -49,14 +50,21 @@
 		</div>
 
 		<div id="body-right">
-<div id="userdetail"class="rightcontent">
-	<p>adkfnsu</p>
-<!--User Details ki php script-->
-</div>
-	<div id="issueblockview" class="rightcontent">
-<p>svdsvdxvc</p>
-<!--Issue dekhne ki php script-->
-</div>
+			<div id="userdetail" class="rightcontent" style="display:inline-block">
+				<table>
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Date Of Birth</th>
+						<th>Username</th>
+						<th>Mobile Number</th>
+					</tr>
+				</table>
+			</div>
+			<div id="issueblockview" class="rightcontent">
+				<p>Division 2!</p>
+				<!--Issue dekhne ki php script-->
+			</div>
 		</div>
 	</div>
 </body>
