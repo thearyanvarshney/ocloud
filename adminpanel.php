@@ -43,7 +43,7 @@
 				<button type="button" class="body-left-options" onclick="showdivissue()">Reports</button>
 			</div>
 			<div id="logout-div">
-				<a href="index.html">
+				<a href="logout.php">
 					Logout
 				</a>
 			</div>
@@ -53,12 +53,32 @@
 			<div id="userdetail" class="rightcontent" style="display:inline-block">
 				<table>
 					<tr>
-						<th>ID</th>
-						<th>Name</th>
-						<th>Date Of Birth</th>
-						<th>Username</th>
-						<th>Mobile Number</th>
-					</tr>
+                    <th> ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Date of Birth</th>
+                    <th>Contact Number</th>
+                    <th>Username</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $sql1 = "select id,fname,lname,dob,phone,username from user";
+                $result = mysqli_query($conn, $sql1);
+                while ($row = mysqli_fetch_array($result)) {
+                    ?>
+                    <tr>
+                        <td><?php echo $row['id']; ?></td>
+                        <td><?php echo $row['fname']; ?></td>
+                        <td><?php echo $row['lname']; ?></td>
+                        <td><?php echo $row['dob']; ?></td>
+                        <td><?php echo $row['phone']; ?></td>
+                        <td><?php echo $row['username']; ?></td>
+                        
+                                        </tr>
+                    
+                <?php } ?>
+				</tbody>
 				</table>
 			</div>
 			<div id="issueblockview" class="rightcontent">
