@@ -61,15 +61,16 @@
 
 		<div id="contactus-right">
 			<p style="font-size: 28px;"><b>For any query and suggestion...</b></p><br>
-			<form id="contact-form" action="#">
+			<form id="contact-form" action="contact_view.php">
 
-			  	<input type="text" id="namebox" name="fname" placeholder="Name"><br><br>
-			  	<input type="no" id="phonenobox" name="lname" placeholder="Phone no."><br><br>
-			  	<input type="text" id="emailbox" name="fname" placeholder="Email"><br><br>
-			  	<input type="no" id="commentbox" name="lname" placeholder="Comment"><br><br>
+			  	<input class="input-field" type="text" id="namebox" name="fname" placeholder="Name"><br><br>
+			  	<input class="input-field" type="tel" id="phonenobox" name="lname" placeholder="Phone no."><br><br>
+			  	<input class="input-field" type="text" id="emailbox" name="fname" placeholder="Email"><br><br>
+			  	<input class="input-field" type="text" id="commentbox" name="lname" placeholder="Comment"><br><br>
 
 			  	<div id="submit-button">
-			  		<a href="#">Submit</a>
+					<p> <?php     echo $a=@$_GET['msg'];     ?></p>
+			  		<button type="submit" value="submit"name="submit">Submit</button>
 			  	</div>
 
 			</form>
