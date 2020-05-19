@@ -3,7 +3,6 @@
 
 <head>
   <link rel="stylesheet" href="css/upload.css">
-  <script src="js/upload.js"></script>
 </head>
 
 <body>

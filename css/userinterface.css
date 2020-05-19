@@ -66,9 +66,7 @@ body {
 #home-div>a>img {
   height: 30px;
   margin-left: auto;
-float: left;
-
-
+  float: left;
 }
 
 .files-heading {
@@ -86,12 +84,6 @@ float: left;
   font-size: 20px;
   text-align: center;
   color: black;
-}
-
-#profile-pic {
-  height: 140px;
-  width: 140px;
-  border-radius: 50%;
 }
 
 #logout-div {
@@ -125,7 +117,7 @@ float: left;
 #pagecontainer {
   height: 100%;
   width: 100%;
-  border:0px;
+  border: 0px;
 }
 
 h1, button {
@@ -141,7 +133,7 @@ h1, button {
   width: 30%;
 }
 
-.button-one, .button-two, .button-three, .button-four {
+.button-one, .button-two, .button-three, .button-five {
   font-size: 20px;
   font-family: myfont;
   border-radius: 5px;
@@ -151,8 +143,10 @@ h1, button {
 
 /*Button One*/
 .button-one {
-  width:70%;
-  padding: 7px;
+  width: 70%;
+  height: 40px;
+  padding: 0px;
+  line-height: 40px;
   outline: none;
   background-color: #27ae60;
   border: none;
@@ -170,6 +164,14 @@ h1, button {
   transform: translateY(5px);
 }
 
+.button-pic-1 {
+  float: left;
+  height: 30px;
+  width: 30px;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
 /*Button Two*/
 .button-two {
   display: inline-block;
@@ -178,7 +180,9 @@ h1, button {
   border: none;
   color: black;
   text-align: center;
-  padding: 8px;
+  padding: 0px;
+  height: 40px;
+  line-height: 40px;
   width: 70%;
   transition: all 0.5s;
   cursor: pointer;
@@ -200,10 +204,11 @@ h1, button {
   right: -20px;
   transition: 0.5s;
 }
-.button-two:hover
-{
+
+.button-two:hover {
   box-shadow: 0px 0px 10px 1px white;
 }
+
 .button-two:hover span {
   padding-right: 25px;
 }
@@ -212,12 +217,24 @@ h1, button {
   opacity: 1;
   right: 0;
 }
+
+.button-pic-2 {
+  float: left;
+  height: 28px;
+  width: 28px;
+  margin-left: 10%;
+  margin-top: 3%;
+  filter: grayscale(100%);
+}
+
 /*Button Three*/
 .button-three {
   position: relative;
   background-color: #f39c12;
   border: none;
-  padding: 8px;
+  padding: 0px;
+  height: 40px;
+  line-height: 40px;
   width: 70%;
   text-align: center;
   transition-duration: 0.4s;
@@ -252,7 +269,54 @@ h1, button {
   transition: 0s
 }
 
+.button-pic-3 {
+  float: left;
+  height: 28px;
+  width: 28px;
+  margin-left: 10%;
+  margin-top: 3%;
+  filter: grayscale(100%)invert(100);
+}
+
 .button-four {
+  font-family: myfont;
+  font-size: 17px;
+  box-shadow: 0px 0px 8px 2px grey;
+  background-image: linear-gradient(to bottom, #464653, #3E3E49);
+  padding: 0px;
+  width: 60%;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  outline: none;
+  display: block;
+  margin: auto;
+  height: 45px;
+  line-height: 45px;
+}
+
+.button-four:active {
+  transform: translateY(3px);
+  color: steelblue;
+  box-shadow: 0px 0px 8px 2px steelblue;
+}
+
+.button-four>span {
+  font-size: 30px;
+  float: left;
+  margin-left: 11%;
+}
+
+.button-pic-4 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 10%;
+  float: left;
+  margin-top: 4%;
+}
+
+.button-five {
   padding: 10px 30px;
   outline: none;
   background-color: #95a5a6;
@@ -264,13 +328,13 @@ h1, button {
   box-shadow: 0 3px black;
 }
 
-.button-four:hover {
+.button-five:hover {
   background-color: #362d26;
   box-shadow: 0 3px #95a5a6;
   color: aliceblue;
 }
 
-.button-four:active {
+.button-five:active {
   color: white;
   background-color: #565350;
   box-shadow: 0 3px #95a5a6;

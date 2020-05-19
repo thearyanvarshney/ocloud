@@ -41,7 +41,10 @@
 			<div id="body-left-menu">
 				<button type="button" class="body-left-options" onclick="showdivuser()">Users</button></div>
 			<div id="body-left-menu">
-				<button type="button" class="body-left-options" onclick="showdivissue()">Reports</button>
+				<button type="button" class="body-left-options" onclick="showdivquery()">Queries</button>
+			</div>
+			<div id="body-left-menu">
+				<button type="button" class="body-left-options" onclick="showdivissue()">Issues</button>
 			</div>
 			<div id="logout-div">
 				<a href="logout.php">
@@ -80,8 +83,8 @@
 				</tbody>
 				</table>
 			</div>
-			<div id="issueblockview" class="rightcontent">
-				<p>Queries</p>
+			<div id="queryblockview" class="rightcontent">
+				<center><h3>Queries:</h3></center>
 				<table>
 					<tr>
                     <th> ID</th>
@@ -103,13 +106,16 @@
                         <td><?php echo $row['phone']; ?></td>
                         <td><?php echo $row['email']; ?></td>
                         <td><?php echo $row['comment']; ?></td>
-                                               
+
                                         </tr>
-                    
+
                 <?php } ?>
 				</tbody>
 				</table>
 
+			</div>
+			<div id="issueblockview" class="rightcontent">
+<p>Division 3!</p>
 			</div>
 		</div>
 	</div>
