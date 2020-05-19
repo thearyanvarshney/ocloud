@@ -36,6 +36,7 @@
         </div>
         <div class="passwordcontent">
           <form id="passform" action="changepassword.php" method="post">
+            <input class="inputclass" type="password" name="curpassword" placeholder="Current Password" required>
             <input class="inputclass" id="passchange1" type="password" name="npassword" placeholder="New Password" required>
             <input class="inputclass" id="passchange2" type="password" name="cPassword" placeholder="Confirm Password" required>
             <p id="inner"><br></p>
