@@ -30,6 +30,13 @@ function validate() {
     document.getElementById("signupform").action = "javascript:void(0)";
     document.getElementById("signupform").method = "";
   }
+  else {
+    {
+      document.getElementById("signupform").action = "login.php";
+      document.getElementById("signupform").method = "post";
+
+    }
+  }
 }
 
 function reseterror1() {

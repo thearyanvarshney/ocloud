@@ -23,5 +23,10 @@ function validate() {
     document.getElementById("inner").innerHTML = "&#9888; Passwords Don't Match!";
     document.getElementById("passform").action = "javascript:void(0)";
     document.getElementById("passform").method = "";
+  } else {
+    {
+      document.getElementById("passform").action = "changepassword.php";
+      document.getElementById("passform").method = "post";
+    }
   }
 }
