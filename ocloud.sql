@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2020 at 08:39 AM
+-- Generation Time: May 19, 2020 at 06:26 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -35,17 +35,6 @@ CREATE TABLE `contact` (
   `comment` varchar(100) CHARACTER SET latin1 COLLATE latin1_swedish_nopad_ci NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `contact`
---
-
-INSERT INTO `contact` (`id`, `name`, `phone`, `email`, `comment`) VALUES
-(1, 'Aryan', 9457357157, 'aryan.varshney94@gmail.com', 'abcd'),
-(3, 'Yogesh', 123456789, 'yogesh@gmail.com', 'aaaa'),
-(4, 'Anuj', 123456789, 'anuj', 'qqq'),
-(5, '', 0, '', ''),
-(6, 'Shivam', 9457357157, 'yogesh@gmail.com', 'hjh');
-
 -- --------------------------------------------------------
 
 --
@@ -61,13 +50,6 @@ CREATE TABLE `user` (
   `username` varchar(100) NOT NULL,
   `password` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`id`, `fname`, `lname`, `dob`, `phone`, `username`, `password`) VALUES
-(1, 'Aryan', 'Varshney', '2000-09-08', 9457357157, 'iamaryan', 'abcdef');
 
 -- --------------------------------------------------------
 
@@ -120,7 +102,7 @@ ALTER TABLE `contact`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `userfiles`
