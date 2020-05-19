@@ -22,7 +22,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<!--Table Content (Aryan ka kaam)-->
+			
 			<?php
                         $i = 1;
 			$username = $_SESSION['username'];
