@@ -6,7 +6,7 @@ $lname=$_POST['LastName'];
 $dob=$_POST['DateOfBirth'];
 $phone=$_POST['ContactNum'];
 $user=$_POST['Username'];
-$pass=$_POST['Password'];
+$pass=md5($_POST['Password']);
 $cpass=$_POST['CPassword'];
 $que="select * from user where binary username='$user'";
 $x=mysqli_query($conn,$que);
