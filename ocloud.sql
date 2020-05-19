@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 12, 2020 at 09:19 AM
+-- Generation Time: May 19, 2020 at 08:39 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -24,6 +24,31 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `id` int(10) NOT NULL,
+  `name` varchar(20) CHARACTER SET latin1 COLLATE latin1_swedish_nopad_ci NOT NULL,
+  `phone` bigint(15) NOT NULL,
+  `email` varchar(40) CHARACTER SET latin1 COLLATE latin1_swedish_nopad_ci NOT NULL,
+  `comment` varchar(100) CHARACTER SET latin1 COLLATE latin1_swedish_nopad_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`id`, `name`, `phone`, `email`, `comment`) VALUES
+(1, 'Aryan', 9457357157, 'aryan.varshney94@gmail.com', 'abcd'),
+(3, 'Yogesh', 123456789, 'yogesh@gmail.com', 'aaaa'),
+(4, 'Anuj', 123456789, 'anuj', 'qqq'),
+(5, '', 0, '', ''),
+(6, 'Shivam', 9457357157, 'yogesh@gmail.com', 'hjh');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
@@ -36,6 +61,13 @@ CREATE TABLE `user` (
   `username` varchar(100) NOT NULL,
   `password` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `fname`, `lname`, `dob`, `phone`, `username`, `password`) VALUES
+(1, 'Aryan', 'Varshney', '2000-09-08', 9457357157, 'iamaryan', 'abcdef');
 
 -- --------------------------------------------------------
 
@@ -57,6 +89,12 @@ CREATE TABLE `userfiles` (
 --
 
 --
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -73,16 +111,22 @@ ALTER TABLE `userfiles`
 --
 
 --
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `userfiles`
 --
 ALTER TABLE `userfiles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
