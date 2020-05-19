@@ -81,8 +81,35 @@
 				</table>
 			</div>
 			<div id="issueblockview" class="rightcontent">
-				<p>Division 2!</p>
-				<!--Issue dekhne ki php script-->
+				<p>Queries</p>
+				<table>
+					<tr>
+                    <th> ID</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Comment</th>
+                                    </tr>
+            </thead>
+            <tbody>
+                <?php
+                $sql2 = "select id,name,phone,email,comment from contact";
+                $result = mysqli_query($conn, $sql2);
+                while ($row = mysqli_fetch_array($result)) {
+                    ?>
+                    <tr>
+                        <td><?php echo $row['id']; ?></td>
+                        <td><?php echo $row['name']; ?></td>
+                        <td><?php echo $row['phone']; ?></td>
+                        <td><?php echo $row['email']; ?></td>
+                        <td><?php echo $row['comment']; ?></td>
+                                               
+                                        </tr>
+                    
+                <?php } ?>
+				</tbody>
+				</table>
+
 			</div>
 		</div>
 	</div>
