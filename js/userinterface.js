@@ -13,3 +13,6 @@ function rundelete() {
 function runprofile() {
   document.getElementById("pagecontainer").src = "profile.php";
 }
+function runreport() {
+  document.getElementById("pagecontainer").src = "report.html";
+}
