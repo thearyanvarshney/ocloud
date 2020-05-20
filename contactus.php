@@ -22,9 +22,9 @@
 	<div id="contactus">
 		<div id="contactus-left">
 			<p style="font-size: 28px;"><b><u>Contact Us</u></b></p><br>
-			<p class="address">Add : 123 xyz Vrindavan Mathura (2812**)</p>
-			<p class="address">Ph no. : 1234567890, 0987654321</p>
-			<p class="address">Email :- abcd@xyz.com</p><br><br>
+			<p class="address">Address : 17km Stone, NH-19, Chaumuhan, Mathura-281 406 (U.P.)</p>
+			<p class="address">Phone No. : 1234567890, 9876543210</p>
+			<p class="address">Email Address : abcd@gla.ac.in</p><br><br>
 
 			<div id="developers">
 				<p style="font-size:28px;"><b><u>Developers</u></b></p><br>
@@ -32,27 +32,27 @@
 				<ul class="address">
 					<li>
 						<b>Anuj Arora(+91 99971 69094)</b>
-						<p style="margin-left: 10px;">- Front-end Developer</p>
+						<p style="margin-left: 10px;">- Front-End & Javascript</p>
 					</li><br>
 					<li>
 						<b>Yogesh Kumar(+91 78308 09342)</b>
-						<p style="margin-left: 10px;">- Front-end Developer</p>
+						<p style="margin-left: 10px;">- Front-End & Javascript</p>
 					</li><br>
 					<li>
 						<b>Aryan Varshney(+91 94573 57157)</b>
-						<p style="margin-left: 10px;">- Back-end Developer</p>
+						<p style="margin-left: 10px;">- Full Back-End</p>
 					</li><br>
 					<li>
 						<b>Adarsh Pandey(+91 95328 67633)</b>
-						<p style="margin-left: 10px;">- Back-end Developer</p>
+						<p style="margin-left: 10px;">- Front-End & Documentation</p>
 					</li><br>
 					<li>
 						<b>Abhishek Gupta(+91 91199 85652)</b>
-						<p style="margin-left: 10px;">- Documentations</p>
+						<p style="margin-left: 10px;">- Documentation</p>
 					</li><br>
 					<li>
 						<b>Shivam Sharma(+91 90275 76156)</b>
-						<p style="margin-left: 10px;">- Documentations</p>
+						<p style="margin-left: 10px;">- Documentation</p>
 					</li>
 				</ul><br><br>
 			</div>
@@ -60,16 +60,16 @@
 		</div>
 
 		<div id="contactus-right">
-			<p style="font-size: 28px;"><b>For any query and suggestion...</b></p><br>
+			<center><h2><b>For Any Query or Suggestion..</p></h2><center>
+				<br>
 			<form id="contact-form" action="contact_view.php">
 
-			  	<input class="input-field" type="text" id="namebox" name="name" placeholder="Name"><br><br>
-			  	<input class="input-field" type="tel" id="phonenobox" name="phone" placeholder="Phone no."><br><br>
-			  	<input class="input-field" type="text" id="emailbox" name="email" placeholder="Email"><br><br>
-			  	<input class="input-field" type="text" id="commentbox" name="comment" placeholder="Comment"><br><br>
-
-			  	<div id="submit-button">
+			  	<input class="input-field" type="text" id="namebox" name="name" placeholder="Name" required><br><br>
+			  	<input class="input-field" type="tel" id="phonenobox" name="phone" placeholder="Phone no." required><br><br>
+			  	<input class="input-field" type="text" id="emailbox" name="email" placeholder="Email" required><br><br>
+			  	<input class="input-field" type="text" id="commentbox" name="comment" placeholder="Comment" required><br><br>
 					<p> <?php     echo $a=@$_GET['msg'];     ?></p>
+			  	<div id="submit-button">
 			  		<button type="submit" value="submit"name="submit">Submit</button>
 			  	</div>
 
