@@ -115,7 +115,30 @@
 
 			</div>
 			<div id="issueblockview" class="rightcontent">
-<p>Division 3!</p>
+				table>
+					<tr>
+                    <th> ID</th>
+                    <th>Username</th>
+                    <th> Issue </th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $sql1 = "select id,username,issue from issue";
+                $result = mysqli_query($conn, $sql1);
+                while ($row = mysqli_fetch_array($result)) {
+                    ?>
+                    <tr>
+                        <td><?php echo $row['id']; ?></td>
+                        <td><?php echo $row['username']; ?></td>
+                        <td><?php echo $row['issue']; ?></td>
+
+                                        </tr>
+
+                <?php } ?>
+				</tbody>
+				</table>
+<p></p>
 			</div>
 		</div>
 	</div>
