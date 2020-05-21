@@ -11,8 +11,12 @@
   font-family: myfont3;
   src: url("../font/Alegreya.ttf");
 }
+html
+{
+  height:100%;
+}
 body {
-  background: linear-gradient(to right, #5c258d, #4389a2);
+  background: linear-gradient(to top right, #5c258d, #4389a2);
   background-size: cover;
   font-weight: 100;
 }

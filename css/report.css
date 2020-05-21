@@ -1,0 +1,33 @@
+@font-face {
+  src:url("../font/josefin.ttf");
+  font-family: myfont;
+
+}
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to right, #dd5e89, #f7bb97);
+}
+h1, h3 {
+  text-align: center;
+  font-family: myfont;
+  color: white;
+  text-shadow: 3px 3px 8px black;
+}
+
+.formclass {
+  margin-top: 9%;
+  text-align: center;
+}
+.input-field
+{
+  border: none;
+  border-radius: 5px;
+}
+input[type=submit]
+{
+margin-top: 2%;
+padding: 10px 30px;
+}

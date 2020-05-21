@@ -14,5 +14,5 @@ function runprofile() {
   document.getElementById("pagecontainer").src = "profile.php";
 }
 function runreport() {
-  document.getElementById("pagecontainer").src = "report.html";
+  document.getElementById("pagecontainer").src = "report.php";
 }
