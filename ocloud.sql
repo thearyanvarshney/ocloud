@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2020 at 06:26 PM
+-- Generation Time: May 21, 2020 at 04:25 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -35,6 +35,36 @@ CREATE TABLE `contact` (
   `comment` varchar(100) CHARACTER SET latin1 COLLATE latin1_swedish_nopad_ci NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`id`, `name`, `phone`, `email`, `comment`) VALUES
+(1, 'Aryan', 9457357157, 'aryan.varshney94@gmail.com', 'abcd'),
+(3, 'Yogesh', 123456789, 'yogesh@gmail.com', 'aaaa'),
+(4, 'Anuj', 123456789, 'anuj', 'qqq'),
+(6, 'Shivam', 9457357157, 'yogesh@gmail.com', 'hjh');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `issue`
+--
+
+CREATE TABLE `issue` (
+  `id` int(11) NOT NULL,
+  `username` varchar(20) NOT NULL,
+  `issue` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `issue`
+--
+
+INSERT INTO `issue` (`id`, `username`, `issue`) VALUES
+(10, 'aryan', 'hey'),
+(11, 'aryan', 'hey');
+
 -- --------------------------------------------------------
 
 --
@@ -50,6 +80,14 @@ CREATE TABLE `user` (
   `username` varchar(100) NOT NULL,
   `password` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `fname`, `lname`, `dob`, `phone`, `username`, `password`) VALUES
+(12, 'Aryan', 'Varshney', '2000-08-01', 9457357157, 'iamaryan', ' d8578edf8458ce06fbc5bb76a58c5ca4'),
+(13, 'Aryan', 'Varshney', '2000-01-01', 9457357157, 'aryan', 'd8578edf8458ce06fbc5bb76a58c5ca4');
 
 -- --------------------------------------------------------
 
@@ -77,6 +115,12 @@ ALTER TABLE `contact`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `issue`
+--
+ALTER TABLE `issue`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -99,16 +143,22 @@ ALTER TABLE `contact`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
+-- AUTO_INCREMENT for table `issue`
+--
+ALTER TABLE `issue`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `userfiles`
 --
 ALTER TABLE `userfiles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
