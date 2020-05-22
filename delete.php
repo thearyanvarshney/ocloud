@@ -5,9 +5,9 @@ $user=$_SESSION['username'];
 if (isset($_POST['delete'])) {
     $checkbox = $_POST['check'];
     for($i=0;$i<count($checkbox);$i++){
-    $del_id = $checkbox[$i]; 
+    $del_id = $checkbox[$i];
     mysqli_query($conn,"Delete from userfiles where id='".$del_id."'");
-	$message = "Data deleted successfully !";
+	$message = "&#10004; File Deleted Successfully!";
 }
 }
 $result = mysqli_query($conn,"SELECT * FROM userfiles");
@@ -18,45 +18,40 @@ $result = mysqli_query($conn,"SELECT * FROM userfiles");
 <head>
   <title>Delete Files On One Go!</title>
 <link rel="stylesheet" href="css/delete.css">
+<script type="text/javascript" src="js/delete.js">
+
+</script>
 </head>
 
 <body>
-  <form action="" method="post" enctype="multipart/form-data">
+  <form id="formclass" action="" method="post" enctype="multipart/form-data">
   <h1>Hello <?php echo $_SESSION['username']; ?>! Delete Your Files!</h1>
   <table table="table">
-    <p> <?php if(isset($message)) { echo $message; } ?></p>
+    <p id="blankline"><br></p>
+    <p id="errormessage"><?php if(isset($message)) { echo $message; } ?></p>
     <tr>
-        <th><input type="checkbox" id="checkAl"> Select All</th>
-       <th>Title</th>
+       <th><input type="checkbox" id="checkAl" onclick="toggle()"> Title</th>
       <th>File Name</th>
       <th>Date Of Creation</th>
-      
+
     </tr>
                 <?php
                 while ($row = mysqli_fetch_array($result)) {
                     ?>
                     <tr>
-                        <td><input type="checkbox" id="checkItem" name="check[]" value="<?php echo $row["id"]; ?>"></td>
-                        <td><?php echo $row['title']; ?></td>
+                        <td><input type="checkbox" class="checkItem" name="check[]" value="<?php echo $row["id"]; ?>"> <?php echo $row['title']; ?></td>
                         <td><?php echo $row['filename']; ?></td>
                         <td><?php echo $row['date']; ?></td>
-                        
+
 
                     </tr>
-                    
+
 
                 <?php } ?>
-            </tbody>
 
   </table>
-  <button type="submit" name="delete" class="button button3">Delete</button>
-  
-</form>
-    <script>
-$("#checkAl").click(function () {
-$('input:checkbox').not(this).prop('checked', this.checked);
-});
-</script>
-</body>
+  <button type="submit" name="delete" class="button"onclick="validate()">Delete</button>
 
+</form>
+</body>
 </html>
