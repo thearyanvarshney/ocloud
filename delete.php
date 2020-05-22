@@ -24,11 +24,10 @@ $result = mysqli_query($conn,"SELECT * FROM userfiles");
   <form action="" method="post" enctype="multipart/form-data">
   <h1>Hello <?php echo $_SESSION['username']; ?>! Delete Your Files!</h1>
   <table table="table">
-    <p> <?php     echo $a=@$_GET['msg'];     ?></p>
+    <p> <?php if(isset($message)) { echo $message; } ?></p>
     <tr>
         <th><input type="checkbox" id="checkAl"> Select All</th>
-        <th>Id</th>
-        <th>Title</th>
+       <th>Title</th>
       <th>File Name</th>
       <th>Date Of Creation</th>
       
@@ -38,7 +37,6 @@ $result = mysqli_query($conn,"SELECT * FROM userfiles");
                     ?>
                     <tr>
                         <td><input type="checkbox" id="checkItem" name="check[]" value="<?php echo $row["id"]; ?>"></td>
-                        <td><?php echo $row['id']; ?></td>
                         <td><?php echo $row['title']; ?></td>
                         <td><?php echo $row['filename']; ?></td>
                         <td><?php echo $row['date']; ?></td>
