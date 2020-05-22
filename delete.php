@@ -31,7 +31,7 @@ $result = mysqli_query($conn,"SELECT * FROM userfiles");
         <th>Title</th>
       <th>File Name</th>
       <th>Date Of Creation</th>
-      <th>Delete</th>
+      
     </tr>
                 <?php
                 while ($row = mysqli_fetch_array($result)) {
@@ -42,16 +42,17 @@ $result = mysqli_query($conn,"SELECT * FROM userfiles");
                         <td><?php echo $row['title']; ?></td>
                         <td><?php echo $row['filename']; ?></td>
                         <td><?php echo $row['date']; ?></td>
-                        <td>
-                            <button type="submit" name="delete" class="button button3">Delete</button>
-                        </td>
+                        
 
                     </tr>
+                    
 
                 <?php } ?>
             </tbody>
 
   </table>
+  <button type="submit" name="delete" class="button button3">Delete</button>
+  
 </form>
     <script>
 $("#checkAl").click(function () {
