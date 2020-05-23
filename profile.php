@@ -32,7 +32,7 @@
       <div id="myModal" class="modal" >
         <div class="modal-content">
           <div class="modal-header">
-              <p class="heading">Change Password<span class="close" onclick="closemodal()">&times;</span></p>
+              <h1 class="heading">Change Password<span class="close" onclick="closemodal()">&times;</span></h1>
         </div>
         <div class="passwordcontent">
           <form id="passform" action="changepassword.php" method="post">
