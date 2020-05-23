@@ -13,8 +13,8 @@
     <h3>Feel free to share your problem or views with us.</h3>
 
     <form class="formclass" action="creport.php" method="post">
-        <textarea class="input-field" type="text"  name="issue" placeholder="Describe the problem being faced, briefly!" rows="8" cols="80" required></textarea><br>
-      <input type="submit" value="Send" name="submit">
+        <textarea class="input-field" type="text"  name="issue" placeholder="Describe the problem being faced, briefly! Or Give Suggestions!" rows="8" cols="80" required></textarea><br>
+      <input type="submit" value="Send" name="submit" class="button">
     </form>
   </body>
 </html>

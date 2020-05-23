@@ -50,7 +50,7 @@ $result = mysqli_query($conn,"SELECT * FROM userfiles");
                 <?php } ?>
 
   </table>
-  <button type="submit" name="delete" class="button"onclick="validate()">Delete</button>
+  <button type="submit" name="delete" class="button" onclick="validate()">Delete</button>
 
 </form>
 </body>

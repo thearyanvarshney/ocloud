@@ -53,6 +53,7 @@ img {
   font-family: myfont;
   font-size: 15px;
   outline: none;
+  cursor: pointer;
 }
 
 #myBtn:hover {

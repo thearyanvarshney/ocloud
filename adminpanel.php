@@ -47,9 +47,7 @@
 				<button type="button" class="body-left-options" onclick="showdivissue()">Issues</button>
 			</div>
 			<div id="logout-div">
-				<a href="logout.php">
-					Logout
-				</a>
+				<a href="logout.php"><button type="button">Logout</button></a>
 			</div>
 		</div>
 
