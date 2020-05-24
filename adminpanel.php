@@ -113,13 +113,16 @@
 
 			</div>
 			<div id="issueblockview" class="rightcontent">
-				table>
-					<tr>
-                    <th> ID</th>
-                    <th>Username</th>
-                    <th> Issue </th>
-                </tr>
-            </thead>
+				<table>
+					<thead>
+						<tr>
+                <th> ID</th>
+                <th>Username</th>
+                <th>Issue/Problem</th>
+								<th>Status</th>
+								<th>Commit</th>
+            </tr>
+        </thead>
             <tbody>
                 <?php
                 $sql1 = "select id,username,issue from issue";
@@ -130,6 +133,8 @@
                         <td><?php echo $row['id']; ?></td>
                         <td><?php echo $row['username']; ?></td>
                         <td><?php echo $row['issue']; ?></td>
+												<td></td>
+												<td><button type="button" name="button">Solved</button> </td>
 
                                         </tr>
 
