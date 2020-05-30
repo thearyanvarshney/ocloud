@@ -16,11 +16,7 @@
 			</div>
 		</div>
 		<div id="head-right">
-			<div id="search-bar">
-				<form>
-					<input id="head-search" type="search" placeholder="Search...">
-				</form>
-			</div>
+
 			<div id="profile-div">
 				<div id="profile-left">
 					<a href="#">
@@ -47,21 +43,22 @@
 				<button type="button" class="body-left-options" onclick="showdivissue()">Issues</button>
 			</div>
 			<div id="logout-div">
-				<a href="logout.php"><button type="button">Logout</button></a>
+				<a href="adminlogin.html"><button type="button">Logout</button></a>
 			</div>
 		</div>
 
 		<div id="body-right">
-			<div id="userdetail" class="rightcontent" style="display:inline-block">
+			<!--User Details  Division-->
+				<div class="rightcontent" style="display:inline-block">
 				<table>
-					<tr>
-                    <th> ID</th>
-                    <th>Full Name</th>
-                    <th>Date of Birth</th>
-                    <th>Contact Number</th>
-                    <th>Username</th>
-                </tr>
-            </thead>
+					<thead>
+						<th>User No.</th>
+            <th> ID</th>
+            <th>Full Name</th>
+            <th>Date of Birth</th>
+            <th>Contact Number</th>
+            <th>Username</th>
+          </thead>
             <tbody>
                 <?php
                 $sql1 = "select id,fname,lname,dob,phone,username from user";
@@ -69,59 +66,59 @@
                 while ($row = mysqli_fetch_array($result)) {
                     ?>
                     <tr>
+												<td></td>
                         <td><?php echo $row['id']; ?></td>
                         <td><?php echo $row['fname']; ?> <?php echo $row['lname']; ?></td>
                         <td><?php echo $row['dob']; ?></td>
                         <td><?php echo $row['phone']; ?></td>
                         <td><?php echo $row['username']; ?></td>
-
-                                        </tr>
+										</tr>
 
                 <?php } ?>
 				</tbody>
 				</table>
 			</div>
-			<div id="queryblockview" class="rightcontent">
-				<center><h3>Queries:</h3></center>
-				<table>
-					<tr>
-                    <th> ID</th>
-                    <th>Name</th>
-                    <th>Phone</th>
-                    <th>Email</th>
-                    <th>Comment</th>
-                                    </tr>
-            </thead>
-            <tbody>
-                <?php
-                $sql2 = "select id,name,phone,email,comment from contact";
-                $result = mysqli_query($conn, $sql2);
-                while ($row = mysqli_fetch_array($result)) {
-                    ?>
-                    <tr>
-                        <td><?php echo $row['id']; ?></td>
-                        <td><?php echo $row['name']; ?></td>
-                        <td><?php echo $row['phone']; ?></td>
-                        <td><?php echo $row['email']; ?></td>
-                        <td><?php echo $row['comment']; ?></td>
-
-                                        </tr>
-
-                <?php } ?>
-				</tbody>
-				</table>
-
-			</div>
-			<div id="issueblockview" class="rightcontent">
+			<!--Query Division-->
+			<div class="rightcontent">
+				<center><h3>Your Users are facing following Problems:</h3></center>
 				<table>
 					<thead>
-						<tr>
-                <th> ID</th>
+						<th>Query No.</th>
+						<th> ID</th>
+						<th>Name</th>
+						<th>Phone</th>
+						<th>Email</th>
+						<th>Comment</th>
+					</thead>
+						<tbody>
+								<?php
+								$sql2 = "select id,name,phone,email,comment from contact";
+								$result = mysqli_query($conn, $sql2);
+								while ($row = mysqli_fetch_array($result)) {
+										?>
+										<tr>
+											<td></td>
+											<td><?php echo $row['id']; ?></td>
+											<td><?php echo $row['name']; ?></td>
+											<td><?php echo $row['phone']; ?></td>
+											<td><?php echo $row['email']; ?></td>
+											<td><?php echo $row['comment']; ?></td>
+										</tr>
+
+								<?php } ?>
+				</tbody>
+				</table>
+			</div>
+			<!--Issue/Problem Division-->
+			<div class="rightcontent">
+				<table>
+					<thead>
+								<th>Sr No.</th>
+                <th>ID</th>
                 <th>Username</th>
                 <th>Issue/Problem</th>
 								<th>Status</th>
 								<th>Commit</th>
-            </tr>
         </thead>
             <tbody>
                 <?php
@@ -130,6 +127,7 @@
                 while ($row = mysqli_fetch_array($result)) {
                     ?>
                     <tr>
+												<td></td>
                         <td><?php echo $row['id']; ?></td>
                         <td><?php echo $row['username']; ?></td>
                         <td><?php echo $row['issue']; ?></td>
@@ -141,8 +139,8 @@
                 <?php } ?>
 				</tbody>
 				</table>
-<p></p>
 			</div>
+
 		</div>
 	</div>
 </body>

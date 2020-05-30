@@ -1,17 +1,18 @@
+var x = document.getElementsByClassName("rightcontent");
 function showdivuser() {
-  document.getElementById("queryblockview").style.display = "none";
-  document.getElementById("issueblockview").style.display = "none";
-  document.getElementById('userdetail').style.display = "inline-block";
+  x[1].style.display="none";
+  x[2].style.display="none";
+  x[0].style.display="inline-block";
 }
 
 function showdivquery() {
-  document.getElementById('userdetail').style.display = "none";
-  document.getElementById("issueblockview").style.display = "none";
-  document.getElementById("queryblockview").style.display = "inline-block";
+  x[0].style.display="none";
+  x[2].style.display="none";
+  x[1].style.display="inline-block";
 }
 
 function showdivissue() {
-  document.getElementById('userdetail').style.display = "none";
-  document.getElementById("queryblockview").style.display = "none";
-  document.getElementById("issueblockview").style.display = "inline-block";
+  x[0].style.display="none";
+  x[1].style.display="none";
+  x[2].style.display="inline-block";
 }
