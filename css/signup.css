@@ -3,6 +3,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  color: rgb(255,255,255);
 }
 
 html, body {
@@ -67,7 +68,7 @@ html, body {
 
 #signupformdesign {
   margin: auto;
-  background-color: rgba(105, 105, 105, 0.9);
+  background-color: rgba(61,61,61,0.8);
   width: 35%;
   border-radius: 20px;
   height: auto;
@@ -78,15 +79,20 @@ html, body {
 }
 
 .inputclass {
-  border-radius: 10px;
-  width: 38%;
-  padding: 1.5%;
-  text-align: center;
-  border: 1px solid black;
+  color: white;
+  background-color: transparent;
+  width: 37%;
+  padding: 1.5% 0px 1.5% 0.5%;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-left: 10px;
+  margin-right: 10px;
+  outline:none;
+  font-family:monospace;
 }
-
-.inputclass:hover {
-  box-shadow: 0px 0px 7px 0px black;
+.inputclass::placeholder
+{
+  color:rgba(255,255,255,0.7);
 }
 
 .errormessage {

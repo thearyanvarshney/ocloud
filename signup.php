@@ -22,7 +22,7 @@
     </div>
     <div class="breakclass"></div>
     <div id="signupformdesign">
-    <form id="signupform" action="login.php" method="post" >
+    <form id="signupform" action="login.php" method="post" autocomplete="off">
      <h1 style="font-family: myfont; font-size: 40px;">Let's Get Started!</h1>
         <input class="inputclass" type="text" name="FirstName" placeholder="First Name" required>
         <input class="inputclass" type="text" name="LastName" placeholder="Last Name">
