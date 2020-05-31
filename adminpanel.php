@@ -35,7 +35,9 @@
 	<div id="body">
 		<div id="body-left">
 			<div id="body-left-menu">
-				<button type="button" class="body-left-options" onclick="showdivuser()">Users</button></div>
+				<button type="button" class="body-left-options" onclick="showdivdash()">Dashboard</button></div>
+			<div id="body-left-menu">
+				<button type="button" class="body-left-options" onclick="showdivuser()">User's Details</button></div>
 			<div id="body-left-menu">
 				<button type="button" class="body-left-options" onclick="showdivquery()">Queries</button>
 			</div>
@@ -48,8 +50,23 @@
 		</div>
 
 		<div id="body-right">
+			<!--Admin Dashboard-->
+			<div class="rightcontent" style="display:inline-block">
+				<div class="firstdiv">
+		      <div class="seconddiv bg-orange">
+		      </div>
+				</div>
+				<div class="firstdiv">
+		      <div class="seconddiv bg-blue">
+		      </div>
+				</div>
+				<div class="firstdiv">
+		      <div class="seconddiv bg-green">
+		      </div>
+				</div>
+			</div>
 			<!--User Details  Division-->
-				<div class="rightcontent" style="display:inline-block">
+				<div class="rightcontent">
 				<table>
 					<thead>
 						<th>User No.</th>

@@ -194,3 +194,34 @@ tr td:first-child::after
   counter-increment: Serial;
   content: counter(Serial);
 }
+.firstdiv{
+  height:20%;
+  position: relative;
+  margin-top: 7%;
+  margin-left: 5%;;
+  width: 25%;
+  float: left;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 2px 2px 10px 0px black;
+}
+
+.seconddiv{
+width: 30%;
+height: 60%;
+position: absolute;
+top: -30%;
+left: 10%;
+box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+}
+.bg-orange
+{
+  background-color: orange;
+}
+.bg-blue
+{
+  background-color: blue;
+}
+.bg-green
+{
+  background-color: green;
+}
