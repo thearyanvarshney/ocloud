@@ -8,7 +8,7 @@ $phone=$_POST['ContactNum'];
 $user=$_POST['Username'];
 $pass=md5($_POST['Password']);
 $cpass=$_POST['CPassword'];
-$type="student";
+$type="normal";
 $que="select * from user where binary username='$user'";
 $x=mysqli_query($conn,$que);
 if(mysqli_num_rows($x)==1)
