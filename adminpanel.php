@@ -91,7 +91,7 @@
           </thead>
             <tbody>
                 <?php
-                $sql1 = "select id,fname,lname,dob,phone,username from user";
+                $sql1 = "select id,fname,lname,dob,phone,username from user where usertype='normal'";
                 $result = mysqli_query($conn, $sql1);
                 while ($row = mysqli_fetch_array($result)) {
                     ?>
