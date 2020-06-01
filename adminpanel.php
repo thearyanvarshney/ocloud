@@ -5,6 +5,8 @@
 <head>
 	<title>Admin's Dashboard</title>
 	<link rel="stylesheet" type="text/css" href="css/adminpanel.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	<script type="text/javascript" src="js/adminpanel.js"></script>
 </head>
 
@@ -53,25 +55,39 @@
 			<!--Admin Dashboard-->
 			<div class="rightcontent" style="display:inline-block">
 				<div class="firstdiv">
-                                    <?php
-                                    $sql="select count(*) as total from user";
-                                    $result=mysqli_query($conn,$sql);
-                                    $data=mysqli_fetch_assoc($result);
-                                    echo "Total Number of Users are ".$data['total'];    
-                                    ?>
-		      <div class="seconddiv bg-orange">
+					<div class="seconddiv bg-orange">
+						<span class="material material-icons" style="font-size: 80px;">person</span>
 		      </div>
+					<div class="thirddiv">
+						<p class="detail">Total Number of Users: <span><?php
+						$sql="select count(*) as total from user where usertype='normal'";
+						$result=mysqli_query($conn,$sql);
+						$data=mysqli_fetch_assoc($result);
+						echo $data['total'];
+						?></span></p>
+					</div>
+					<hr>
+					<div class="fourthdiv">
+						<p class="para"><span class="material-icons clock">update</span>Just Updated</p>
+					</div>
+
 				</div>
 				<div class="firstdiv">
-                                    <?php
-                                    $sql="select count(*) as total from userfiles";
-                                    $result=mysqli_query($conn,$sql);
-                                    $data=mysqli_fetch_assoc($result);
-                                    echo "Total Number of Files are ".$data['total'];    
-                                    ?>
-                                    
-		      <div class="seconddiv bg-blue">
+					<div class="seconddiv bg-blue">
+						<span class="material material-icons" style="font-size: 70px; padding-top: 8%">folder</span>
 		      </div>
+					<div class="thirddiv">
+						<p class="detail">Total Number of Files: <span><?php
+						$sql="select count(*) as total from userfiles";
+						$result=mysqli_query($conn,$sql);
+						$data=mysqli_fetch_assoc($result);
+						echo $data['total'];
+						?></span></p>
+					</div>
+					<hr>
+					<div class="fourthdiv">
+						<p class="para"><span class="material-icons clock">update</span>Just Updated</p>
+					</div>
 				</div>
 				<div class="firstdiv">
 		      <div class="seconddiv bg-green">
