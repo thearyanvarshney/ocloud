@@ -53,10 +53,23 @@
 			<!--Admin Dashboard-->
 			<div class="rightcontent" style="display:inline-block">
 				<div class="firstdiv">
+                                    <?php
+                                    $sql="select count(*) as total from user";
+                                    $result=mysqli_query($conn,$sql);
+                                    $data=mysqli_fetch_assoc($result);
+                                    echo "Total Number of Users are ".$data['total'];    
+                                    ?>
 		      <div class="seconddiv bg-orange">
 		      </div>
 				</div>
 				<div class="firstdiv">
+                                    <?php
+                                    $sql="select count(*) as total from userfiles";
+                                    $result=mysqli_query($conn,$sql);
+                                    $data=mysqli_fetch_assoc($result);
+                                    echo "Total Number of Files are ".$data['total'];    
+                                    ?>
+                                    
 		      <div class="seconddiv bg-blue">
 		      </div>
 				</div>
