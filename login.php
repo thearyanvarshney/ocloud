@@ -8,6 +8,7 @@ $phone=$_POST['ContactNum'];
 $user=$_POST['Username'];
 $pass=md5($_POST['Password']);
 $cpass=$_POST['CPassword'];
+$type="student";
 $que="select * from user where binary username='$user'";
 $x=mysqli_query($conn,$que);
 if(mysqli_num_rows($x)==1)
@@ -17,7 +18,7 @@ if(mysqli_num_rows($x)==1)
 }
 else
 {
-$sql= "INSERT INTO user(fname,lname,dob,phone,username,password) VALUES('$fname','$lname','$dob','$phone','$user','$pass')";
+$sql= "INSERT INTO user(fname,lname,dob,phone,username,password,usertype) VALUES('$fname','$lname','$dob','$phone','$user','$pass','$type')";
 mysqli_query($conn,$sql);
 }
 }

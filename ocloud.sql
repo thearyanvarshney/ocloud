@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 21, 2020 at 04:25 PM
+-- Generation Time: Jun 01, 2020 at 09:40 AM
 -- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.5
+-- PHP Version: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -78,16 +78,17 @@ CREATE TABLE `user` (
   `dob` date NOT NULL,
   `phone` bigint(15) NOT NULL,
   `username` varchar(100) NOT NULL,
-  `password` varchar(50) NOT NULL
+  `password` varchar(50) NOT NULL,
+  `usertype` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `fname`, `lname`, `dob`, `phone`, `username`, `password`) VALUES
-(12, 'Aryan', 'Varshney', '2000-08-01', 9457357157, 'iamaryan', ' d8578edf8458ce06fbc5bb76a58c5ca4'),
-(13, 'Aryan', 'Varshney', '2000-01-01', 9457357157, 'aryan', 'd8578edf8458ce06fbc5bb76a58c5ca4');
+INSERT INTO `user` (`id`, `fname`, `lname`, `dob`, `phone`, `username`, `password`, `usertype`) VALUES
+(14, 'Anuj', 'Arora', '2000-08-28', 9997169094, 'anuj.arora', 'd8578edf8458ce06fbc5bb76a58c5ca4', 'student'),
+(15, '', '', '0000-00-00', 0, 'admin', 'admin2020', 'admin');
 
 -- --------------------------------------------------------
 
@@ -152,7 +153,7 @@ ALTER TABLE `issue`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `userfiles`
