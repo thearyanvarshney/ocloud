@@ -7,14 +7,13 @@ $dob=$_POST['DateOfBirth'];
 $phone=$_POST['ContactNum'];
 $user=$_POST['Username'];
 $pass=md5($_POST['Password']);
-$cpass=$_POST['CPassword'];
+$cpass=md5($_POST['CPassword']);
 $type="normal";
 $que="select * from user where binary username='$user'";
 $x=mysqli_query($conn,$que);
 if(mysqli_num_rows($x)==1)
 {
-
- header('location:signup.php?msg=User Name already Exist');
+ header('location:signup.php?msg=Username Already Exist');
 }
 else
 {
@@ -63,11 +62,11 @@ mysqli_query($conn,$sql);
 		</div>
 
 		<div class="login-text" style="margin-top: 1%;">
-			<p style="padding:10px; font-color: white"><a style="color: darkblue;" href="#">Forget Password?</a></p>
+			<p style="padding:10px; color: white">Forget Password?&nbsp;&nbsp;<a style="color:#007FFF;" href="#">Click Here!</a></p>
 		</div>
 
 		<div class="login-text" style="margin-top: 1%;">
-			<p style="padding:10px; font-color: white">New User? <a style="color: darkblue;" href="signup.php">  Sign Up!</a></p>
+			<p style="padding:10px; color: white">New User?&nbsp;&nbsp;<a style="color:#007FFF;" href="signup.php">Sign Up!</a></p>
 		</div>
 
 	</body>

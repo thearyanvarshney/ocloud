@@ -67,7 +67,7 @@ body {
 }
 
 .login-text {
-  background-color: rgba(197, 197, 197, 0.5);
+  background-color: rgba(197, 197, 197, 0.3);
   margin-left:12%;
   box-shadow: 2px 2px 20px 0px black;
   border-radius: 10px;
@@ -78,13 +78,19 @@ body {
 }
 
 .input-field {
-  border-radius: 5px;
-  border: 0px;
-  width: 80%;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 70%;
   height: 35px;
-  text-align: center;
+  padding-left: 5px;
+  outline: none;
+  background-color: transparent;
+  color: rgb(255,255,255);
 }
-
+.input-field::placeholder
+{
+  color: rgba(255,255,255,0.6);
+}
 #login-button {
   font-family: myfont;
   font-size: 15px;

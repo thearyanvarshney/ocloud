@@ -249,6 +249,7 @@ tr td:first-child::after {
   display: inline-block;
   width: 100%;
   padding-left: 10%;
+  cursor: default;
 }
 
 .detail span {
@@ -280,10 +281,12 @@ hr {
   line-height: 150%;
   font-family: myfont2;
   color: rgba(0, 0, 0, 0.7);
+  cursor: default;
 }
 
 .material {
   filter: invert(100%);
   width: 100%;
   height:100%;
+  cursor: default;
 }
