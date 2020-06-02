@@ -78,7 +78,9 @@ CREATE TABLE `user` (
   `dob` date NOT NULL,
   `phone` bigint(15) NOT NULL,
   `username` varchar(100) NOT NULL,
+  `emailid` varchar(100) NOT NULL,
   `password` varchar(50) NOT NULL,
+  `cpassword` varchar(50) NOT NULL,
   `usertype` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 

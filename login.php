@@ -1,27 +1,4 @@
-<?php include('dbconfig.php');
-if(isset($_POST['SignUp']))
-{
-$fname=$_POST['FirstName'];
-$lname=$_POST['LastName'];
-$dob=$_POST['DateOfBirth'];
-$phone=$_POST['ContactNum'];
-$user=$_POST['Username'];
-$pass=md5($_POST['Password']);
-$cpass=md5($_POST['CPassword']);
-$type="normal";
-$que="select * from user where binary username='$user'";
-$x=mysqli_query($conn,$que);
-if(mysqli_num_rows($x)==1)
-{
- header('location:signup.php?msg=Username Already Exist');
-}
-else
-{
-$sql= "INSERT INTO user(fname,lname,dob,phone,username,password,usertype) VALUES('$fname','$lname','$dob','$phone','$user','$pass','$type')";
-mysqli_query($conn,$sql);
-}
-}
-?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -62,7 +39,7 @@ mysqli_query($conn,$sql);
 		</div>
 
 		<div class="login-text" style="margin-top: 1%;">
-			<p style="padding:10px; color: white">Forget Password?&nbsp;&nbsp;<a style="color:#007FFF;" href="#">Click Here!</a></p>
+			<p style="padding:10px; color: white">Forget Password?&nbsp;&nbsp;<a style="color:#007FFF;" href="forgetpass.html">Click Here!</a></p>
 		</div>
 
 		<div class="login-text" style="margin-top: 1%;">

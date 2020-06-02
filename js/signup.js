@@ -40,7 +40,7 @@ function validate() {
     document.getElementById("signupform").method = "";
   } else {
     {
-      document.getElementById("signupform").action = "login.php";
+      document.getElementById("signupform").action = "signup.php";
       document.getElementById("signupform").method = "post";
 
     }
