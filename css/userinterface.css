@@ -40,9 +40,10 @@ body {
 #logo-div {
   box-sizing: border-box;
   background-image: url("../picture/mainlogo.png");
-  background-size: contain;
-  height: 9%;
-  width: 80%;
+  background-size: cover;
+	background-repeat: no-repeat;
+	height: 8%;
+	width: 80%;
   margin: 12% 10%;
   border: 2px solid black;
   border-radius: 10px;
