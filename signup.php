@@ -2,6 +2,7 @@
 
 $msg1 = null;
 $msg2 = null;
+$successmsg = null;
 if(isset($_POST['SignUp']))
 {
 $fname=$_POST['FirstName'];
@@ -20,12 +21,12 @@ $x=mysqli_query($conn,$que1);
 $y=mysqli_query($conn,$que2);
 if(mysqli_num_rows($x)==1)
 {
-  $msg1 = 'Username Already Exist';
+  $msg1 = 'Username Already Exist!';
   $flag=1;
 }
 if(mysqli_num_rows($y)==1)
 {
-  $msg2 = 'Email Address Already Exist';
+  $msg2 = 'Email Address Already Exist!';
  $flag=1;
 }
 if($flag==1){
@@ -34,6 +35,7 @@ else
 {
 $sql= "INSERT INTO user(fname,lname,dob,phone,username,emailid,password,cpassword,usertype) VALUES('$fname','$lname','$dob','$phone','$user','$email','$pass','$cpass','$type')";
 mysqli_query($conn,$sql);
+$successmsg = 'Account Created Successfully!';
 }
 }
 ?>
@@ -74,6 +76,7 @@ mysqli_query($conn,$sql);
         <center>
         <p class="errormessage"><?php     {echo $msg1;}     ?></p>
         <p class="errormessage"><?php     {echo $msg2;}     ?></p>
+        <p class="successmessage"><?php     {echo $successmsg;}     ?></p>
         <p id="innerpopup1" class="errormessage"></p>
         <p id="innerpopup2" class="errormessage"></p>
         <p id="innerpopup3" class="errormessage"></p>

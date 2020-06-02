@@ -116,13 +116,18 @@ html, body {
 }
 .errormessage {
   color: white;
-  font-family: verdana;
   background-color: rgba(255,0,0,0.6);
   border-radius: 5px;
   width: 80%;
   font-family: myfont;
 }
-
+.successmessage {
+  color: white;
+  background-color: rgba(8,242,110,0.6);
+  border-radius: 5px;
+  width: 80%;
+  font-family: myfont;
+}
 .submitclass {
   background-color: #c5c5c5;
   border-radius: 10px;

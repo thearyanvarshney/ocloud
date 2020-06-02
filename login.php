@@ -31,8 +31,7 @@
 			<br><br>
 			<div align="center"><input type="checkbox" onClick="toggle()">Show Password</div>
       <br>
-      <p style="  color:white;background-color: red;border-radius:5px;width: 100%;"><?php     echo $a=@$_GET['msg'];     ?></p>
-			<!--<div><?php echo $_GET['password_error'];?></div>-->
+      <p class="errormessage"><?php     echo $a=@$_GET['msg'];     ?></p>
 			<input id="login-button" type="submit" name="Submit" value="Login" onClick="validuser()">
 			<br><br>
 			</form>

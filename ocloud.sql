@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 01, 2020 at 09:40 AM
+-- Generation Time: Jun 02, 2020 at 08:16 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.6
 
@@ -88,9 +88,8 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `fname`, `lname`, `dob`, `phone`, `username`, `password`, `usertype`) VALUES
-(14, 'Anuj', 'Arora', '2000-08-28', 9997169094, 'anuj.arora', 'd8578edf8458ce06fbc5bb76a58c5ca4', 'student'),
-(15, '', '', '0000-00-00', 0, 'admin', 'admin2020', 'admin');
+INSERT INTO `user` (`id`, `fname`, `lname`, `dob`, `phone`, `username`, `emailid`, `password`, `cpassword`, `usertype`) VALUES
+(1, 'Admin', 'Admin', '2020-06-02', 0, 'admin', 'admin.admin@admin.com', '4441e5d70b3657900fa57e66db407e0b', '4441e5d70b3657900fa57e66db407e0b', 'admin');
 
 -- --------------------------------------------------------
 
@@ -155,7 +154,7 @@ ALTER TABLE `issue`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `userfiles`

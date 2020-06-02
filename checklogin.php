@@ -9,14 +9,22 @@ session_start();
  $pass=md5($_REQUEST['Password']);
  $que="select * from user where binary username='$name' and binary password='$pass'";
  $x=mysqli_query($conn,$que);
- if(mysqli_num_rows($x)==1)
+ $result=mysqli_fetch_assoc($x);
+
+ if($result["usertype"] == 'admin' and mysqli_num_rows($x)==1)
+ {
+   $_SESSION['username']=$name;
+   header('location:adminpanel.php');
+ }
+ else if($result["usertype"] == 'normal' and mysqli_num_rows($x)==1)
  {
   $_SESSION['username']=$name;
   header('location:userinterface.php');
  }
  else
  {
- header('location:login.php?msg=Either UserName or Password is Incorrect');
+ header('location:login.php?msg=Either UserName or Password is Incorrect!');
  }
+
 }
 ?>
