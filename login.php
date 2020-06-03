@@ -21,14 +21,14 @@
 		</div>
 <br><br><br><br><br>
 		<div class="login-text" style="margin-top: 7%;">
-			<h1 style="text-align:center; margin: 24px 0; padding: 10px; font-size:45;">Login</h1>
+			<h1 class="heading">Login</h1>
 
 			<form action="checklogin.php" method="post" autocomplete="on">
 			<input class="input-field" id="userid" type="text" placeholder="Username" name="Username" required>
 			<br><br>
 			<input class="input-field" id="userpass" type="password" placeholder="Password" name="Password" pattern=".{6,}" required>
 			<br><br>
-			<div align="center"><input type="checkbox" onClick="toggle()">Show Password</div>
+			<div align="center"><input type="checkbox" onClick="toggle()">&nbsp;&nbsp;Show Password</div>
       <br>
       <p class="errormessage"><?php     echo $a=@$_GET['msg'];     ?></p>
 			<input id="login-button" type="submit" name="Submit" value="Login" onClick="validuser()">
@@ -36,12 +36,12 @@
 			</form>
 		</div>
 
-		<div class="login-text" style="margin-top: 1%;">
-			<p style="padding:10px; color: white">Forget Password?&nbsp;&nbsp;<a style="color:#007FFF;" href="forgetpass.php">Click Here!</a></p>
+		<div class="login-text min" style="margin-top: 1%;">
+			<p style="padding:10px; color: rgb(230,230,230);">Forget Password?&nbsp;&nbsp;<a style="color:#007FFF; text-decoration:none;" href="forgetpass.php">Click Here!</a></p>
 		</div>
 
-		<div class="login-text" style="margin-top: 1%;">
-			<p style="padding:10px; color: white">New User?&nbsp;&nbsp;<a style="color:#007FFF;" href="signup.php">Sign Up!</a></p>
+		<div class="login-text min" style="margin-top: 1%;">
+			<p style="padding:10px; color: rgb(230,230,230)">New User?&nbsp;&nbsp;<a style="color:#007FFF; text-decoration: none;" href="signup.php">Sign Up!</a></p>
 		</div>
 
 	</body>

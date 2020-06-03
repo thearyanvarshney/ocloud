@@ -32,15 +32,15 @@
 				<ul class="address">
 					<li>
 						<b>Anuj Arora(+91 99971 69094)</b>
-						<p style="margin-left: 10px;">- Front-End & Javascript</p>
+						<p style="margin-left: 10px;">- Front-End Developer & Javascript</p>
 					</li><br>
 					<li>
 						<b>Yogesh Kumar(+91 78308 09342)</b>
-						<p style="margin-left: 10px;">- Front-End & Javascript</p>
+						<p style="margin-left: 10px;">- Front-End Developer & Javascript</p>
 					</li><br>
 					<li>
 						<b>Aryan Varshney(+91 94573 57157)</b>
-						<p style="margin-left: 10px;">- Full Back-End</p>
+						<p style="margin-left: 10px;">- Back-End Developer</p>
 					</li><br>
 					<li>
 						<b>Adarsh Pandey(+91 95328 67633)</b>
@@ -64,10 +64,10 @@
 				<br>
 			<form id="contact-form" action="contact_view.php">
 
-			  	<input class="input-field" type="text" id="namebox" name="name" placeholder="Name" required><br><br>
-			  	<input class="input-field" type="tel" id="phonenobox" name="phone" placeholder="Phone no." required><br><br>
-			  	<input class="input-field" type="text" id="emailbox" name="email" placeholder="Email" required><br><br>
-			  	<input class="input-field" type="text" id="commentbox" name="comment" placeholder="Comment" required><br><br>
+			  	<input class="textbox" type="text" name="name" placeholder="Name" required><br><br>
+			  	<input class="textbox" type="tel" name="phone" placeholder="Phone no." required><br><br>
+			  	<input class="textbox" type="text" name="email" placeholder="Email" required><br><br>
+			  	<input class="textbox" type="text" name="comment" placeholder="Comment" required><br><br>
 					<p> <?php     echo $a=@$_GET['msg'];     ?></p>
 			  	<div id="submit-button">
 			  		<button type="submit" value="submit"name="submit">Submit</button>
