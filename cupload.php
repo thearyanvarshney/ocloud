@@ -9,7 +9,7 @@ if (isset($_POST['uploadfile'])) {
     $date = date("Y-m-d");
     $sql = "INSERT INTO userfiles(username,title,caption,filename,date) Values('$username','$title','$caption','$fname','$date')";
     if (mysqli_query($conn, $sql)) {
-         move_uploaded_file($_FILES['files']['tmp_name'], "USerfiles/".$username.$fname);
+         move_uploaded_file($_FILES['files']['tmp_name'], "Userfiles/".$username.$fname);
         header('location:upload.php?msg=File Upload Successfully');
     } else {
         header('location:upload.php?msg=Error In Upload');

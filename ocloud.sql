@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 02, 2020 at 08:16 PM
+-- Generation Time: Jun 03, 2020 at 06:22 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.6
 
@@ -35,16 +35,6 @@ CREATE TABLE `contact` (
   `comment` varchar(100) CHARACTER SET latin1 COLLATE latin1_swedish_nopad_ci NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `contact`
---
-
-INSERT INTO `contact` (`id`, `name`, `phone`, `email`, `comment`) VALUES
-(1, 'Aryan', 9457357157, 'aryan.varshney94@gmail.com', 'abcd'),
-(3, 'Yogesh', 123456789, 'yogesh@gmail.com', 'aaaa'),
-(4, 'Anuj', 123456789, 'anuj', 'qqq'),
-(6, 'Shivam', 9457357157, 'yogesh@gmail.com', 'hjh');
-
 -- --------------------------------------------------------
 
 --
@@ -56,14 +46,6 @@ CREATE TABLE `issue` (
   `username` varchar(20) NOT NULL,
   `issue` varchar(200) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `issue`
---
-
-INSERT INTO `issue` (`id`, `username`, `issue`) VALUES
-(10, 'aryan', 'hey'),
-(11, 'aryan', 'hey');
 
 -- --------------------------------------------------------
 
@@ -142,25 +124,25 @@ ALTER TABLE `userfiles`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `issue`
 --
 ALTER TABLE `issue`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `userfiles`
 --
 ALTER TABLE `userfiles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
