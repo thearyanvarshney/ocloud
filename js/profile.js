@@ -25,7 +25,7 @@ function validate() {
     document.getElementById("passform").method = "";
   } else {
     {
-      document.getElementById("passform").action = "changepassword.php";
+      document.getElementById("passform").action = "profile.php";
       document.getElementById("passform").method = "post";
     }
   }
