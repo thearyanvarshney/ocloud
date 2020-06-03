@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -38,7 +37,7 @@
 		</div>
 
 		<div class="login-text" style="margin-top: 1%;">
-			<p style="padding:10px; color: white">Forget Password?&nbsp;&nbsp;<a style="color:#007FFF;" href="forgetpass.html">Click Here!</a></p>
+			<p style="padding:10px; color: white">Forget Password?&nbsp;&nbsp;<a style="color:#007FFF;" href="forgetpass.php">Click Here!</a></p>
 		</div>
 
 		<div class="login-text" style="margin-top: 1%;">

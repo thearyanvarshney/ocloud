@@ -1,5 +1,4 @@
 <?php include('dbconfig.php');
-
 $msg1 = null;
 $msg2 = null;
 $successmsg = null;
