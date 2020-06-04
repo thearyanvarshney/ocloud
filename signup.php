@@ -32,8 +32,10 @@ if($flag==1){
 }
 else
 {
-$sql= "INSERT INTO user(fname,lname,dob,phone,username,emailid,password,cpassword,usertype) VALUES('$fname','$lname','$dob','$phone','$user','$email','$pass','$cpass','$type')";
-mysqli_query($conn,$sql);
+$sql1= "INSERT INTO user(fname,lname,dob,phone,username,emailid,password,cpassword,usertype) VALUES('$fname','$lname','$dob','$phone','$user','$email','$pass','$cpass','$type')";
+$sql2="INSERT INTO otpgen(username,email) VALUES('$user','$email')";
+mysqli_query($conn,$sql1);
+mysqli_query($conn,$sql2);
 $successmsg = 'Account Created Successfully!';
 }
 }
