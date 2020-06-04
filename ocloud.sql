@@ -41,7 +41,7 @@ CREATE TABLE `contact` (
 -- Table structure for table `issue`
 --
 
-EATE TABLE `issue` (
+CREATE TABLE `issue` (
   `id` int(11) NOT NULL,
   `username` varchar(20) NOT NULL,
   `issue` varchar(200) NOT NULL,
