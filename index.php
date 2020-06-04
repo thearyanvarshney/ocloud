@@ -39,7 +39,7 @@
 		<div id="last-body">
 			<div id="last-body-left">
 				<p style="font-size: 28px;">Contact Us</p>
-				<p class="address">Add : 123 xyz Vrindavan Mathura (2812**)</p>
+				<p class="address">Add : 17km Stone, NH-19, Chaumuhan, Mathura-281 406 (U.P.)</p>
 				<p class="address">Ph no. : 1234567890, 0987654321</p>
 				<p class="address">Email :- abcd@xyz.com</p>
 
