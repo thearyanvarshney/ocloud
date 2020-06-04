@@ -169,7 +169,7 @@
         </thead>
             <tbody>
                 <?php
-                $sql1 = "select id,username,issue from issue";
+                $sql1 = "select id,username,issue,status from issue";
                 $result = mysqli_query($conn, $sql1);
                 while ($row = mysqli_fetch_array($result)) {
                     ?>
@@ -178,6 +178,7 @@
                         <td><?php echo $row['id']; ?></td>
                         <td><?php echo $row['username']; ?></td>
                         <td><?php echo $row['issue']; ?></td>
+			    <td><?php echo $row['status']; ?></td>
 												<td></td>
 												<td><button type="button" name="button">Solved</button> </td>
 
