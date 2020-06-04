@@ -41,11 +41,13 @@ CREATE TABLE `contact` (
 -- Table structure for table `issue`
 --
 
-CREATE TABLE `issue` (
+EATE TABLE `issue` (
   `id` int(11) NOT NULL,
   `username` varchar(20) NOT NULL,
-  `issue` varchar(200) NOT NULL
+  `issue` varchar(200) NOT NULL,
+  `status` varchar(25) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
 
 -- --------------------------------------------------------
 
