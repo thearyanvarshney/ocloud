@@ -43,7 +43,7 @@ $successmsg = 'Account Created Successfully!';
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sign Up - Let's get started!</title>
+  <title>Sign Up - Let's Get Started!</title>
   <link rel="stylesheet" href="css/signup.css" type="text/css">
 	<script src="js/signup.js"></script>
 </head>

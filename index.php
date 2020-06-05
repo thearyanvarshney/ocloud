@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Login Page</title>
+		<title>Home</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 	</head>
 	<body>

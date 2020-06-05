@@ -31,7 +31,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Login here</title>
+		<title>Login - OCloud</title>
 		<link rel="stylesheet" href="css/login.css">
 		<script src="js/login.js"></script>
 	</head>

@@ -100,15 +100,17 @@
 				<table>
 					<thead>
 						<th>User No.</th>
-            <th> ID</th>
+            <th>ID</th>
             <th>Full Name</th>
+						<th>Username</th>
+						<th>Email Id</th>
             <th>Date of Birth</th>
             <th>Contact Number</th>
-            <th>Username</th>
+
           </thead>
             <tbody>
                 <?php
-                $sql1 = "select id,fname,lname,dob,phone,username from user where usertype='normal'";
+                $sql1 = "select id,fname,lname,emailid,dob,phone,username from user where usertype='normal'";
                 $result = mysqli_query($conn, $sql1);
                 while ($row = mysqli_fetch_array($result)) {
                     ?>
@@ -116,9 +118,11 @@
 												<td></td>
                         <td><?php echo $row['id']; ?></td>
                         <td><?php echo $row['fname']; ?> <?php echo $row['lname']; ?></td>
+												<td><?php echo $row['username']; ?></td>
+												<td><?php echo $row['emailid']; ?></td>
                         <td><?php echo $row['dob']; ?></td>
                         <td><?php echo $row['phone']; ?></td>
-                        <td><?php echo $row['username']; ?></td>
+
 										</tr>
 
                 <?php } ?>
@@ -169,8 +173,8 @@
         </thead>
             <tbody>
                 <?php
-                $sql1 = "select id,username,issue,status from issue";
-                $result = mysqli_query($conn, $sql1);
+                $sql3 = "select id,username,issue,status from issue";
+                $result = mysqli_query($conn, $sql3);
                 while ($row = mysqli_fetch_array($result)) {
                     ?>
                     <tr>
@@ -178,11 +182,9 @@
                         <td><?php echo $row['id']; ?></td>
                         <td><?php echo $row['username']; ?></td>
                         <td><?php echo $row['issue']; ?></td>
-			    <td><?php echo $row['status']; ?></td>
-												<td></td>
-												<td><button type="button" name="button">Solved</button> </td>
-
-                                        </tr>
+			    							<td><?php echo $row['status']; ?></td>
+												<td><button type="button" name="button">Solved</button></td>
+											</tr>
 
                 <?php } ?>
 				</tbody>
