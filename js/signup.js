@@ -2,8 +2,6 @@ function validate() {
   var a, b, c, d, z = 0;
   var re = new RegExp("^[a-zA-Z0-9._@]+$");
   var reg = new RegExp(/\d{10}/);
-  var emailreg = new RegExp("^[a-zA-Z0-9.]@[a-zA-Z].[a-zA-Z.]");
-  var regemail = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
   a = document.getElementById("userpass1").value;
   b = document.getElementById("userpass2").value;
   c = document.getElementById("username").value;
@@ -22,19 +20,14 @@ function validate() {
       z = z + 1;
     }
   }
-  /*This if condition will validate Monile Number*/
+  /*This if condition will validate Mobile Number*/
   if (!d.length == 0) {
     if (!reg.test(d)) {
       document.getElementById("innerpopup3").innerHTML = "&#9888; Contact Number is Invalid!";
       z = z + 1;
     }
   }
-  if (!e.length == 0) {
-    if (!regemail.test(e)) {
-      document.getElementById("innerpopup4").innerHTML = "&#9888; Email Address is Invalid!";
-      z = z + 1;
-    }
-  }
+  /*This if condition will stop form to redirect if any invalidation occurs.*/
   if (z != 0) {
     document.getElementById("signupform").action = "javascript:void(0)";
     document.getElementById("signupform").method = "";

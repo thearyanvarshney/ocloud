@@ -57,27 +57,24 @@ if(isset($_POST['Submit']))
             <p class="inner"><?php     {echo $msg1;}     ?></p>
           </div>
             <button id="myBtn" type="button" name="ChPassword" onclick="openmodal()">Click To Change Password</button>
-      </div>
-      <div id="myModal" class="modal" >
-        <div class="modal-content">
-          <div class="modal-header">
-              <h1 class="heading">Change Password<span class="close" onclick="closemodal()">&times;</span></h1>
-        </div>
-        <div class="passwordcontent">
-          <form id="passform" action="profile.php" method="post">
-            <input class="inputclass" type="password" name="curpassword" placeholder="Current Password" required>
-            <input class="inputclass" id="passchange1" type="password" name="npassword" placeholder="New Password" required>
-            <input class="inputclass" id="passchange2" type="password" name="cpassword" placeholder="Confirm Password" required>
-            <input class="buttonstyle" type="submit" name="Submit" value="Change Password" onclick="validate()" >
-
-          </form>
-        </div>
-        </div>
-      </div>
-
-
+    </div>
   </div>
+  <div id="myModal" class="modal" >
+    <div class="modal-content">
+      <div class="modal-header">
+          <h1 class="heading">Change Password<span class="close" onclick="closemodal()">&times;</span></h1>
+    </div>
+    <div class="passwordcontent">
+      <form id="passform" action="profile.php" method="post">
+        <input class="inputclass" type="password" name="curpassword" placeholder="Current Password" required>
+        <input class="inputclass" id="passchange1" type="password" name="npassword" placeholder="New Password" required>
+        <input class="inputclass" id="passchange2" type="password" name="cpassword" placeholder="Confirm Password" required>
+        <input class="buttonstyle" type="submit" name="Submit" value="Change Password" onclick="validate()" >
 
+      </form>
+    </div>
+    </div>
+  </div>
 </body>
 
 </html>

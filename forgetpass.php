@@ -32,23 +32,30 @@ else
 }
 ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" http-equiv="refresh">
     <title>Forget Password?</title>
+    <link rel="stylesheet" href="css/forget.css">
     </style>
     <link rel="stylesheet" href="css/forget.css">
   </head>
   <body>
-    <main>
-      <form class="formdesign"  action="forgetpass.php" method="post">
-        <input type="text" class="inputclass" name="emailid" placeholder="Enter Email Address">
-        <input type="text" class="inputclass" name="username" placeholder="Enter Username">
-        <p class="successmessage"><?php     {echo $successmsg;}     ?></p>
-        <input type="submit" name="submit" value="Send Mail">
-      </form>
-      <br>
-
-    </main>
+    <div class="header">
+      <div class="headerlogo"></div>
+      </div>
+      <div class="form-div">
+        <div class="heading">
+          <h1 class="headingtext">Enter Details to Reset Password</h1>
+        </div>
+        <div class="formdesign">
+          <form action="forgetpass.php" method="post">
+            <input type="text" class="inputbox" class="inputclass" name="emailid" placeholder="Enter Email Address">
+            <input type="text" class="inputbox" name="username" placeholder="Enter Username">
+            <p class="successmessage"><?php     {echo $successmsg;}     ?></p>
+            <input type="submit"class="submitbutton" name="submit" value="Send Mail">
+          </form>
+        </div>
+      </div>
   </body>
 </html>

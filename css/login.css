@@ -146,3 +146,10 @@ body {
   width: 100%;
   font-family: myfont;
 }
+.successmessage {
+  color: white;
+  background-color: rgba(8,242,110,0.6);
+  border-radius: 5px;
+  width: 100%;
+  font-family: myfont;
+}

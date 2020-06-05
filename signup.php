@@ -68,7 +68,7 @@ $successmsg = 'Account Created Successfully!';
         <input class="inputclass inlineinput" type="text" name="FirstName" placeholder="First Name" required>
         <input class="inputclass inlineinput" type="text" name="LastName" placeholder="Last Name">
         <input class="inputclass" type="date" name="DateOfBirth" placeholder="Date Of Birth" required>
-        <input class="inputclass" id="emailid" type="text" name="EmailId" placeholder="Email Address" oninput="reseterror4()" required on>
+        <input class="inputclass" id="emailid" type="email" name="EmailId" placeholder="Email Address" required>
         <input class="inputclass" id="mobnum" type="tel" name="ContactNum" placeholder="Contact Number" maxlength="10" oninput="reseterror3()" required>
         <input class="inputclass" id="username" type="text" name="Username" placeholder="Username" oninput="reseterror2()" required>
         <input class="inputclass" id="userpass1" type="password" name="Password" placeholder="Password" oninput="reseterror1()" required>

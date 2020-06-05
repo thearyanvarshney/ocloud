@@ -28,16 +28,27 @@ else {
   }
 }
 ?>
- <!DOCTYPE html>
- <html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
    <head>
      <meta charset="utf-8">
-     <title>VErify OTP!</title>
+     <link rel="stylesheet" href="css/forget.css">
+     <title>Verify OTP</title>
    </head>
    <body>
-     <form class="formclass" action="checkotp.php" method="post">
-       <input type="number" id="myText" name="otp" placeholder="Enter OTP">
-       <input type="submit" id="Button" name="validate" value="Verify">
-     </form>
+     <div class="header">
+       <div class="headerlogo"></div>
+     </div>
+     <div class="form-div">
+       <div class="heading">
+         <h1 class="headingtext">Enter OTP</h1>
+       </div>
+       <div class="formdesign">
+         <form action="checkotp.php" method="post">
+           <input type="number" class="inputbox" name="otp" placeholder="Enter OTP">
+           <input type="submit" class="submitbutton" name="validate" value="Verify">
+         </form>
+       </div>
+     </div>
    </body>
- </html>
+</html>

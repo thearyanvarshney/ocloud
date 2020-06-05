@@ -37,10 +37,7 @@ session_start();
 	</head>
 	<body>
 		<div id="header">
-			<div id="header-left-logo">
-				<!--<img height="90px;" src="picture/mainlogo.png">-->
-			</div>
-
+			<div id="header-left-logo"></div>
 			<div id="header-right">
 				<a class="header-right-menu" href="index.php">Home</a>
 				<a class="header-right-menu active" href="login.php">Login</a>
@@ -61,6 +58,7 @@ session_start();
 			<div align="center"><input type="checkbox" onClick="toggle()">&nbsp;&nbsp;Show Password</div>
       <br>
       <p class="errormessage"><?php     echo $a=@$_GET['msg'];     ?></p>
+      <p class="successmessage"><?php     echo $a=@$_GET['msg1'];     ?></p>
 			<input id="login-button" type="submit" name="Submit" value="Login" onClick="validuser()">
 			<br><br>
 			</form>

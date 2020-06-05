@@ -1,0 +1,91 @@
+@font-face {
+  src: url("../font/alegreyaitalic.ttf");
+  font-family: myfont;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  background-color: ;
+  overflow: hidden;
+}
+
+.header {
+  height: 12%;
+  width: 100%;
+  background: linear-gradient(to bottom, Steelblue, rgba(0, 0, 0, 0.8));
+  border-radius: 15px;
+  margin: auto;
+  display: inline-block;
+  padding-top: 0.4%;
+}
+
+.headerlogo {
+  background-image: url("../picture/mainlogo.png");
+  background-size: cover;
+  height: 75px;
+  width: 15%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 2px solid black;
+  margin: auto;
+}
+
+.form-div
+{
+  font-family: myfont;
+  text-align: center;
+  box-sizing: border-box;
+  border: 2px solid black;
+  box-sizing: border-box;
+  margin: auto;
+  width: 30%;
+  margin-top:8%;
+}
+.heading {
+  background-color: lightgrey;
+  padding: 20px;
+}
+
+.headingtext {
+  font-size: 30px;
+  margin: 0;
+}
+.formdesign
+{
+  background-color: rgba(140,140,140,0.1);
+  padding: 35px;
+}
+.inputbox
+{
+  outline: none;
+  font-family: monospace;
+  margin: auto;
+  display: block;
+  margin-bottom: 5%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(56,56,56,0.8);
+  width: 50%;
+}
+.submitbutton
+{
+  padding: 12px;
+  border-radius: 5px;
+  background-color: rgba(56,56,56,0.9);
+  border: none;
+  color: white;
+  font-family: myfont;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+.submitbutton:hover
+{
+  box-shadow:3px 3px 10px 0px rgb(160,160,160);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
