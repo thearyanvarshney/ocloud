@@ -1,3 +1,23 @@
+<?php
+include 'dbconfig.php';
+if(isset($_REQUEST['submit'])){
+    $name = $_REQUEST['name'];
+    $phone=$_REQUEST['phone'];
+    $email = $_REQUEST['email'];
+    $comment = $_REQUEST['comment'];
+    $que="select * from contact where binary id='$user'";
+    $x=mysqli_query($conn,$que);
+if(mysqli_num_rows($x)==1)
+{
+    header('location:contactus.php?msg=Again Sent Your Message');
+}
+else{
+    $sql="INSERT INTO `contact` (`name`, `phone`, `email`, `comment`) VALUES ('$name','$phone','$email','$comment')";
+    mysqli_query($conn,$sql);
+    header('location:contactus.php?msg=Message Sent Succesfully');
+}
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,7 +82,7 @@
 		<div id="contactus-right">
 			<center><h2><b>For Any Query or Suggestion..</p></h2><center>
 				<br>
-			<form id="contact-form" action="contact_view.php">
+			<form id="contact-form" action="contactus.php">
 
 			  	<input class="textbox" type="text" name="name" placeholder="Name" required><br><br>
 			  	<input class="textbox" type="tel" name="phone" placeholder="Phone no." required><br><br>
