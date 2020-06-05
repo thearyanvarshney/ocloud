@@ -19,7 +19,7 @@ $sql="update otpgen set otp='$otp' where username='" . $_SESSION['$username'] . 
 mysqli_query($conn,$sql);
 mail($_SESSION['$email'],'Recover Password','Your One Time Password is: '.$otp,'From: ocloudbca@gmail.com');
 $successmsg="Mail Sent Successfully!";
-header('location:');
+header('location:checkotp.php');
 }
 else
 {
@@ -30,33 +30,7 @@ else
   session_destroy();
 }
 }
-if(isset($_POST['validate']))
-{
-  if(isset($_SESSION['$username']))
-  {
-  $otpinput=$_POST['otp'];
-  $otpver="select * from otpgen where username= '" . $_SESSION['$username'] . "' and email='" . $_SESSION['$email'] . "'";
-  $y=mysqli_query($conn,$otpver);
-  $value=mysqli_fetch_assoc($y);
-  echo "qqqq . $otpinput . qqq";
-  if($value['otp']==$otpinput)
-  {
-  // header('location:changepassword.php');
-  }
-  else
-  {
-    echo "<script>
-    alert('Incorrect OTP!');
-    </script>";
-    $_SESSION = array();
-    session_destroy();
-  }
-  }
-  else {
-    echo "Mail hasn't been sent yet! [Session Not Created]";
-  }
-}
-  ?>
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -74,10 +48,7 @@ if(isset($_POST['validate']))
         <input type="submit" name="submit" value="Send Mail">
       </form>
       <br>
-      <form class="formclass" style="" action="forgetpass.php" method="post">
-        <input type="number" id="myText" name="otp" placeholder="Enter OTP">
-        <input type="submit" id="Button" name="validate" value="Verify">
-      </form>
+
     </main>
   </body>
 </html>
