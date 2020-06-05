@@ -1,5 +1,6 @@
 <?php
 session_start();
+include('dbconfig.php');
 if(!isset($_SESSION['$username']))
 {
 header('location:login.php?msg=Invalid Access!');
@@ -26,8 +27,7 @@ else {
     }
   }
 }
-
- ?>
+?>
  <!DOCTYPE html>
  <html lang="en" dir="ltr">
    <head>
@@ -35,7 +35,7 @@ else {
      <title>VErify OTP!</title>
    </head>
    <body>
-     <form class="formclass" style="" action="checkotp.php" method="post">
+     <form class="formclass" action="checkotp.php" method="post">
        <input type="number" id="myText" name="otp" placeholder="Enter OTP">
        <input type="submit" id="Button" name="validate" value="Verify">
      </form>

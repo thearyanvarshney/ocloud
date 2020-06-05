@@ -1,6 +1,7 @@
 <?php
 session_start();
 include('dbconfig.php');
+$flag=0;
 if(!isset($_SESSION['$username']))
 {
 header('location:login.php?msg=Invalid Access!');
@@ -12,9 +13,14 @@ else {
     $pass=md5($_POST['newpass']);
     $cpass=md5($_POST['confirmpass']);
     $conn=mysqli_query($conn,"update user set password='$pass', cpassword='$cpass' where username='$user'");
-    echo "Password Changed Successfully";
+    $flag=1;
+    $_SESSION = array();
+    session_destroy();
+    if($flag==1)
+    {
+      header('location:login.php?msg=Password Changed Successfully!');
+    }
   }
-
 }
 ?>
 
