@@ -81,7 +81,7 @@
 			<div id="footer-text" style="text-align: center;">
 				<h2 class="footer-text">Copyright &copy; | 2020-2025</h2>
 				<p>For more information :
-				<a id="click-here" href="#">click here!</a>
+				<a id="click-here" href="clickhere.html">click here!</a>
 			</div>
 		</div>
 		<br>
