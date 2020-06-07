@@ -2,7 +2,6 @@
 <?php include('dbconfig.php'); ?>
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Admin's Dashboard</title>
 	<link rel="stylesheet" type="text/css" href="css/adminpanel.css">
@@ -38,14 +37,16 @@
 	<div id="body">
 		<div id="body-left">
 			<div id="body-left-menu">
-				<button type="button" class="body-left-options" onclick="showdivdash()">Dashboard</button></div>
-			<div id="body-left-menu">
-				<button type="button" class="body-left-options" onclick="showdivuser()">User's Details</button></div>
-			<div id="body-left-menu">
-				<button type="button" class="body-left-options" onclick="showdivquery()">Queries</button>
+				<a href="#dashboard"><button type="button" class="body-left-options" onclick="showdivdash()">Dashboard</button></a>
 			</div>
 			<div id="body-left-menu">
-				<button type="button" class="body-left-options" onclick="showdivissue()">Issues</button>
+				<a href="#userdetails"><button type="button" class="body-left-options" onclick="showdivuser()">User's Details</button></a>
+			</div>
+			<div id="body-left-menu">
+				<a href="#queries"><button type="button" class="body-left-options" onclick="showdivquery()">Queries</button></a>
+			</div>
+			<div id="body-left-menu">
+				<a href="#issues"><button type="button" class="body-left-options" onclick="showdivissue()">Issues</button></a>
 			</div>
 			<div id="logout-div">
 				<a href="logout.php"><button type="button">Logout</button></a>

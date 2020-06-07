@@ -140,6 +140,7 @@ body {
   transition: 0.25s ease-in-out;
   background-repeat: no-repeat;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .body-left-options:hover {
