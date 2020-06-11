@@ -35,11 +35,9 @@ else
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Forget Password?</title>
     <link rel="stylesheet" href="css/forget.css">
-    </style>
-    <link rel="stylesheet" href="css/forget.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <div class="header">

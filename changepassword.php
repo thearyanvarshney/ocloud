@@ -36,11 +36,14 @@ else {
      <meta charset="utf-8">
      <title>Change Password</title>
      <link rel="stylesheet" href="css/forget.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    </head>
    <body>
      <div class="header">
-       <div class="headerlogo"></div>
-       </div>
+       <img class="headerlogo" src="picture/mainlogo.png">
+       <form action="checkotp.php" method="post">
+       <button type="submit" name="exitbutton" class="exitbutton"><span title="Back to Login!" class="material-icons" style="font-size: 40px;">exit_to_app</span></button>
+       </form>
        <div class="form-div">
          <div class="heading">
            <h1 class="headingtext">Enter New Password</h1>

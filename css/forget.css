@@ -2,11 +2,12 @@
   src: url("../font/alegreyaitalic.ttf");
   font-family: myfont;
 }
+
 html, body {
   height: 100%;
   width: 100%;
   margin: 0%;
-  background-color: rgba(200,200,200,0.1);
+  background-color: rgba(200, 200, 200, 0.1);
   overflow: hidden;
   user-select: none;
 }
@@ -35,38 +36,38 @@ html, body {
   margin-top: 0.4%;
 }
 
-.form-div
-{
+.form-div {
   font-family: myfont;
   text-align: center;
   box-sizing: border-box;
-  border: 2px solid rgba(0,0,0,0.7);
+  border: 2px solid rgba(0, 0, 0, 0.7);
   box-sizing: border-box;
   margin: auto;
   width: 30%;
-  margin-top:8%;
+  margin-top: 8%;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
+
 .heading {
   background-color: lightgrey;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  width: 91.2%;
 }
 
 .headingtext {
   font-size: 30px;
   margin: 0;
 }
-.formdesign
-{
-  background-color: rgba(140,140,140,0.1);
+
+.formdesign {
+  background-color: rgba(140, 140, 140, 0.1);
   padding: 38px;
 }
-.inputbox
-{
+
+.inputbox {
   outline: none;
   font-family: monospace;
   margin: auto;
@@ -74,14 +75,14 @@ html, body {
   margin-bottom: 5%;
   padding: 10px;
   border-radius: 10px;
-  border: 2px solid rgba(56,56,56,0.8);
+  border: 2px solid rgba(56, 56, 56, 0.8);
   width: 50%;
 }
-.submitbutton
-{
+
+.submitbutton {
   padding: 12px;
   border-radius: 5px;
-  background-color: rgba(56,56,56,0.9);
+  background-color: rgba(56, 56, 56, 0.9);
   border: none;
   color: white;
   font-family: myfont;
@@ -90,18 +91,18 @@ html, body {
   outline: none;
   margin-top: 2%;
 }
-.submitbutton:hover
-{
-  box-shadow:3px 3px 10px 0px rgb(160,160,160);
+
+.submitbutton:hover {
+  box-shadow: 3px 3px 10px 0px rgb(160, 160, 160);
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.exiticon
-{
-  float: right;
+
+.exiticon {
   position: absolute;
   right: 20px;
   top: 25%;
@@ -109,6 +110,22 @@ input::-webkit-inner-spin-button {
   color: white;
   cursor: pointer;
 }
-.exiticon:hover{
-color: black;
+
+.exiticon:hover {
+  color: black;
+}
+
+.exitbutton {
+  position: absolute;
+  right: 20px;
+  top: 25%;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+.exitbutton:hover {
+  color: black;
 }
