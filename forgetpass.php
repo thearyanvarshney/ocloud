@@ -32,30 +32,32 @@ else
 }
 ?>
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" http-equiv="refresh">
-    <title>Forget Password?</title>
-    <link rel="stylesheet" href="css/forget.css">
-    </style>
-    <link rel="stylesheet" href="css/forget.css">
-  </head>
-  <body>
-    <div class="header">
-      <div class="headerlogo"></div>
-      </div>
-      <div class="form-div">
-        <div class="heading">
-          <h1 class="headingtext">Enter Details to Reset Password</h1>
-        </div>
-        <div class="formdesign">
-          <form action="forgetpass.php" method="post">
-            <input type="text" class="inputbox" class="inputclass" name="emailid" placeholder="Enter Email Address">
-            <input type="text" class="inputbox" name="username" placeholder="Enter Username">
-            <p class="successmessage"><?php     {echo $successmsg;}     ?></p>
-            <input type="submit"class="submitbutton" name="submit" value="Send Mail">
-          </form>
-        </div>
-      </div>
-  </body>
+<html lang="en" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="css/forget.css">
+     <title>Verify OTP</title>
+   </head>
+   <body>
+     <div class="header">
+     	<div class="header-left">
+     		<div class="headerlogo"></div>
+     	</div>
+     	<div class="header-right">
+     		<a href="login.php">Back to Login</a>
+     	</div>
+       
+     </div>
+     <div class="form-div">
+       <div class="heading">
+         <h1 class="headingtext">Enter OTP</h1>
+       </div>
+       <div class="formdesign">
+         <form action="checkotp.php" method="post">
+           <input type="number" class="inputbox" name="otp" placeholder="Enter OTP">
+           <input type="submit" class="submitbutton" name="validate" value="Verify">
+         </form>
+       </div>
+     </div>
+   </body>
 </html>
