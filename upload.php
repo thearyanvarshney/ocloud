@@ -30,7 +30,7 @@ if (isset($_POST['uploadfile'])) {
 
     <div class="form-group">
       <label for="title">Title <span>Use title case to get a better result</span></label>
-      <input type="text" name="title" id="title" class="form-controll" />
+      <input type="text" name="title" id="title" class="form-controll" required/>
     </div>
     <div class="form-group">
       <label for="caption">Caption <span>This caption should be descriptive</span></label>
@@ -39,7 +39,7 @@ if (isset($_POST['uploadfile'])) {
 
     <div class="form-group file-area">
       <label for="Files">Files <span>Choose Files To Upload</span></label>
-      <input type="file" name="files" id="files" required="required" multiple="multiple">
+      <input type="file" name="files" id="files"  multiple="multiple" required/>
       <div class="file-dummy">
         <div class="success">Great, your files are selected. Keep On!</div>
         <div class="default">Please select some files</div>
