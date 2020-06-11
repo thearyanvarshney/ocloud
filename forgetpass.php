@@ -35,7 +35,7 @@ else
 <html lang="en" dir="ltr">
    <head>
      <meta charset="utf-8">
-     <link rel="stylesheet" href="css/forget.css">
+     <link rel="stylesheet" href="css/forgot.css">
      <title>Verify OTP</title>
    </head>
    <body>
