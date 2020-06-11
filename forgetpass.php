@@ -40,13 +40,7 @@ else
    </head>
    <body>
      <div class="header">
-     	<div class="header-left">
-     		<div class="headerlogo"></div>
-     	</div>
-     	<div class="header-right">
-     		<a href="login.php">Back to Login</a>
-     	</div>
-       
+       <div class="headerlogo"></div>
      </div>
      <div class="form-div">
        <div class="heading">
