@@ -1,72 +1,36 @@
-
 @font-face {
   src: url("../font/alegreyaitalic.ttf");
   font-family: myfont;
 }
-
 html, body {
   height: 100%;
   width: 100%;
   margin: 0%;
-  background-color: LightCyan;
+  background-color: ;
   overflow: hidden;
 }
 
 .header {
   height: 12%;
-  width: 98%;
-  margin-left: 1%;
-  margin-top: 1%;
-  background-color: PowderBlue;
+  width: 100%;
+  background: linear-gradient(to bottom, Steelblue, rgba(0, 0, 0, 0.8));
   border-radius: 15px;
+  margin: auto;
   display: inline-block;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-}
-
-.header-left {
-  box-sizing: border-box;
-  float: left;
-  width: 50%;
-  height: 100%;
+  padding-top: 0.4%;
 }
 
 .headerlogo {
   background-image: url("../picture/mainlogo.png");
   background-size: cover;
-  height: 85%;
-  width: 35%;
+  height: 75px;
+  width: 15%;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   border: 2px solid black;
-  margin: 5px 100px;
+  margin: auto;
+}
 
-}
-.header-right {
-  box-sizing: border-box;
-  float: right;
-  width: 50%;
-  height: 100%;
-}
-.header-right>a {
-  box-sizing: border-box;
-  background-color: PaleGreen; 
-  border-radius: 10px;
-  margin-top: 3%;
-  color: black;
-  cursor: pointer;
-  padding: 15px 50px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  margin-left: 60%;
-}
-.header-right a:hover{
-  background-color: Steelblue;
-  color: white;
-  border-radius: 10px;
-  box-shadow: 2px 3px 10px 0px rgb(0,0,0);
-}
 .form-div
 {
   font-family: myfont;
@@ -77,8 +41,6 @@ html, body {
   margin: auto;
   width: 30%;
   margin-top:8%;
-  box-shadow: 2px 3px 10px 0px rgb(0,0,0);
-  border-radius: 10px;
 }
 .heading {
   background-color: lightgrey;
