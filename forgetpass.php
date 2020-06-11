@@ -35,7 +35,7 @@ else
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" http-equiv="refresh">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Forget Password?</title>
     <link rel="stylesheet" href="css/forget.css">
     </style>
@@ -43,8 +43,9 @@ else
   </head>
   <body>
     <div class="header">
-      <div class="headerlogo"></div>
-      </div>
+      <img class="headerlogo" src="picture/mainlogo.png">
+      <a href="login.php"><span title="Back to Login!" class="material-icons exiticon">exit_to_app</span></a>
+    </div>
       <div class="form-div">
         <div class="heading">
           <h1 class="headingtext">Enter Details to Reset Password</h1>

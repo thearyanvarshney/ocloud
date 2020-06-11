@@ -5,8 +5,7 @@
 <head>
 	<title>Admin's Dashboard</title>
 	<link rel="stylesheet" type="text/css" href="css/adminpanel.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script type="text/javascript" src="js/adminpanel.js"></script>
 </head>
 

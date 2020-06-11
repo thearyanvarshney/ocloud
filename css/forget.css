@@ -6,29 +6,33 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0%;
-  background-color: ;
+  background-color: rgba(200,200,200,0.1);
   overflow: hidden;
+  user-select: none;
 }
 
 .header {
   height: 12%;
-  width: 100%;
+  width: 98%;
   background: linear-gradient(to bottom, Steelblue, rgba(0, 0, 0, 0.8));
   border-radius: 15px;
   margin: auto;
-  display: inline-block;
-  padding-top: 0.4%;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: 1%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 .headerlogo {
-  background-image: url("../picture/mainlogo.png");
-  background-size: cover;
-  height: 75px;
+  height: 80%;
   width: 15%;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   border: 2px solid black;
   margin: auto;
+  display: block;
+  margin-top: 0.4%;
 }
 
 .form-div
@@ -36,15 +40,20 @@ html, body {
   font-family: myfont;
   text-align: center;
   box-sizing: border-box;
-  border: 2px solid black;
+  border: 2px solid rgba(0,0,0,0.7);
   box-sizing: border-box;
   margin: auto;
   width: 30%;
   margin-top:8%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 .heading {
   background-color: lightgrey;
   padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 91.2%;
 }
 
 .headingtext {
@@ -54,7 +63,7 @@ html, body {
 .formdesign
 {
   background-color: rgba(140,140,140,0.1);
-  padding: 35px;
+  padding: 38px;
 }
 .inputbox
 {
@@ -79,6 +88,7 @@ html, body {
   font-size: 16px;
   cursor: pointer;
   outline: none;
+  margin-top: 2%;
 }
 .submitbutton:hover
 {
@@ -88,4 +98,17 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+.exiticon
+{
+  float: right;
+  position: absolute;
+  right: 20px;
+  top: 25%;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+.exiticon:hover{
+color: black;
 }
