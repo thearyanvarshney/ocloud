@@ -118,32 +118,26 @@ body {
   height: 10%;
 }
 
-#body-left-menu>button {
-  cursor: pointer;
-  list-style: none;
-  text-decoration: none;
-  display: block;
-}
-
 .body-left-options {
+  display: inline-block;
   font-family: myfont;
   margin: auto;
-  font-size: 22px;
+  text-decoration: none;
+  font-size: 1.5vw;
   color: black;
   border: none;
   padding: 9px 20px;
   background: linear-gradient(to right, #FC766A99, #5B84B166);
   outline: none;
   border: 2px solid #676767;
-  border-radius: 100px;
+  border-radius: 50px;
   background-size: 0% 100%;
   transition: 0.25s ease-in-out;
   background-repeat: no-repeat;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
 }
 
-.body-left-options:hover {
+.body-left-options:hover{
   background-size: 100% 100%;
   padding: 10px 20px;
   color: white;

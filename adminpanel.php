@@ -37,19 +37,19 @@
 		<div id="body-left">
 			<!--ID: 0-->
 			<div id="body-left-menu">
-				<a href="#dashboard"><button type="button" class="body-left-options" onclick="showdiv(0)">Dashboard</button></a>
+				<a href="#dashboard" class="body-left-options" onclick="showdiv(0)">Dashboard</a>
 			</div>
 			<!--ID: 1-->
 			<div id="body-left-menu">
-				<a href="#userdetails"><button type="button" class="body-left-options" onclick="showdiv(1)">User's Details</button></a>
+				<a href="#userdetails" class="body-left-options" onclick="showdiv(1)">User's Details</a>
 			</div>
 			<!--ID: 2-->
 			<div id="body-left-menu">
-				<a href="#queries"><button type="button" class="body-left-options" onclick="showdiv(2)">Queries</button></a>
+				<a href="#queries" class="body-left-options" onclick="showdiv(2)">Queries</a>
 			</div>
 			<!--ID: 3-->
 			<div id="body-left-menu">
-				<a href="#issues"><button type="button" class="body-left-options" onclick="showdiv(3)">Issues</button></a>
+				<a href="#issues" class="body-left-options" onclick="showdiv(3)">Issues</a>
 			</div>
 			<div id="logout-div">
 				<a href="logout.php"><button type="button">Logout</button></a>
