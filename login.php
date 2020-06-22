@@ -50,7 +50,7 @@ session_start();
 		<div class="login-text" style="margin-top: 7%;">
 			<h1 class="heading">Login</h1>
 
-			<form action="login.php" method="post" autocomplete="on">
+			<form action="login.php" method="post">
 			<input class="input-field" id="userid" type="text" placeholder="Username" name="Username" required>
 			<br><br>
 			<input class="input-field" id="userpass" type="password" placeholder="Password" name="Password" pattern=".{6,}" required>

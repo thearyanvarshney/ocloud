@@ -17,7 +17,11 @@ if(mysqli_num_rows($x)==1)
 $result=mysqli_fetch_assoc($x);
 $sql="update otpgen set otp='$otp' where username='" . $_SESSION['$username'] . "'";
 mysqli_query($conn,$sql);
-mail($_SESSION['$email'],'Recover Password','Your One Time Password is: '.$otp,'From: ocloudbca@gmail.com');
+$str = <<<EOD
+Hello User!
+Your One Time Password is: $otp.
+EOD;
+mail($_SESSION['$email'],'Recover Password',$str,'From: ocloudbca@gmail.com');
 $successmsg="Mail Sent Successfully!";
 header('location:checkotp.php');
 }
@@ -49,7 +53,7 @@ else
           <h1 class="headingtext">Enter Details to Reset Password</h1>
         </div>
         <div class="formdesign">
-          <form action="forgetpass.php" method="post">
+          <form action="forgetpass.php" method="post" autocomplete="off">
             <input type="text" class="inputbox" class="inputclass" name="emailid" placeholder="Enter Email Address">
             <input type="text" class="inputbox" name="username" placeholder="Enter Username">
             <p class="successmessage"><?php     {echo $successmsg;}     ?></p>
