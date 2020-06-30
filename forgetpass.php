@@ -17,10 +17,11 @@ if(mysqli_num_rows($x)==1)
 $result=mysqli_fetch_assoc($x);
 $sql="update otpgen set otp='$otp' where username='" . $_SESSION['$username'] . "'";
 mysqli_query($conn,$sql);
-$str = <<<EOD
-Hello User!
+$name=$_SESSION['$username'];
+$str = <<<EOT
+Hello $name
 Your One Time Password is: $otp.
-EOD;
+EOT;
 mail($_SESSION['$email'],'Recover Password',$str,'From: ocloudbca@gmail.com');
 $successmsg="Mail Sent Successfully!";
 header('location:checkotp.php');
